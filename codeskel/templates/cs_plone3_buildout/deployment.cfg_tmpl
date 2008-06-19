@@ -1,0 +1,14 @@
+[buildout]
+extends = buildout.cfg
+
+[instance]
+plone = plone.recipe.zope2instance
+http-address = 8080
+debug-mode = off
+verbose-security = off
+zeo-client = False
+zope-conf-additional = 
+  <environment>
+    TZ CET
+    PYTHON_EGG_CACHE ${buildout:directory}/var/.python-eggs
+  </environment>

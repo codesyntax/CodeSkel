@@ -1,0 +1,12 @@
+GLOBALS = globals()
+
+SKINSELECTIONS = (
+    {'name': "${skinname}",
+     'base': "Plone Default",
+     },
+    )
+SELECTSKIN = True
+DEFAULTSKIN = "${skinname}"
+ALLOWSELECTION = False
+PERSISTENTCOOKIE = False
+RESETSKINTOOL = False
