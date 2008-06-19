@@ -1,5 +1,6 @@
 include HISTORY.txt
-include CONTRIBUTORS.txt
 include LICENSE
+include README.txt
+include BUILDBOT.txt
 recursive-include ez_setup *.txt *.py
-recursive-include copeskel/templates *
+recursive-include codeskel/templates *
