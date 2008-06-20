@@ -1,6 +1,2 @@
-include HISTORY.txt
-include LICENSE
-include README.txt
-include BUILDBOT.txt
 recursive-include ez_setup *.txt *.py
 recursive-include codeskel/templates *
