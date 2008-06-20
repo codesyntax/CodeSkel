@@ -1,1 +1,6 @@
 #
+from cs_plone25_theme import Plone25Theme
+from cs_plone3_buildout import Plone3Buildout
+from cs_plone3_theme import Plone3Theme
+from udalplone3_buildout import UdalPlone3Buildout
+from udalplone_buildout import UdalPloneBuildout
