@@ -32,10 +32,10 @@ setup(name='CodeSkel',
       ],
       entry_points="""
       [paste.paster_create_template]
-      cs_plone25_theme = codeskel:Plone25Theme
-      cs_plone3_theme = codeskel:Plone3Theme
-      cs_plone3_buildout = codeskel:Plone3Buildout
-      udalplone_buildout = codeskel:UdalPloneBuildout
-      udalplone3_buildout = codeskel:UdalPlone3Buildout
+      cs_plone25_theme = codeskel.Plone25Theme
+      cs_plone3_theme = codeskel.Plone3Theme
+      cs_plone3_buildout = codeskel.Plone3Buildout
+      udalplone_buildout = codeskel.UdalPloneBuildout
+      udalplone3_buildout = codeskel.UdalPlone3Buildout
       """,
       )
