@@ -1,4 +1,4 @@
-from zopeskel.plone3_theme import Plone3Theme as ZSPlone3Theme
+from zopeskel import Plone3Theme as ZSPlone3Theme
 
 class Plone3Theme(ZSPlone3Theme):
     _template_dir = 'templates/plone3_theme'

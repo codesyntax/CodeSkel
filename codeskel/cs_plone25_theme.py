@@ -1,4 +1,4 @@
-from zopeskel.plone25theme import Plone25Theme as ZSPlone25Theme
+from zopeskel import Plone25Theme as ZSPlone25Theme
 
 class Plone25Theme(ZSPlone25Theme):
     _template_dir = 'templates/plone2.5_theme'
