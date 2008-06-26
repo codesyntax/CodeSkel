@@ -36,9 +36,9 @@ url = \${plone:zope2-url}
 
 [omelette]
 recipe = collective.recipe.omelette
-eggs = ${instance:eggs}
-products = ${instance:products}
-packages = ${zope2:location}/lib/python ./
+eggs = \${instance:eggs}
+products = \${instance:products}
+packages = \${zope2:location}/lib/python ./
 
 
 [translations]

@@ -10,5 +10,5 @@ zeo-client = False
 zope-conf-additional = 
   <environment>
     TZ CET
-    PYTHON_EGG_CACHE ${buildout:directory}/var/.python-eggs
+    PYTHON_EGG_CACHE \${buildout:directory}/var/.python-eggs
   </environment>

@@ -42,9 +42,9 @@ url = \${udalplone:zope2_url}
 
 [omelette]
 recipe = collective.recipe.omelette
-eggs = ${instance:eggs}
-products = ${instance:products}
-packages = ${zope2:location}/lib/python ./
+eggs = \${instance:eggs}
+products = \${instance:products}
+packages = \${zope2:location}/lib/python ./
 
 
 [translations]
