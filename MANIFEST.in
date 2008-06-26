@@ -1,2 +1,0 @@
-recursive-include ez_setup *.txt *.py
-recursive-include codeskel/templates *

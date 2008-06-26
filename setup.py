@@ -24,7 +24,7 @@ setup(name='CodeSkel',
       author_email='mlarreategi@codesyntax.com',
       url='http://code.codesyntax.com/private/CodeSkel',
       license='GPL',
-      packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
+      packages=find_packages(exclude=['ez_setup']),
       include_package_data=True,
       zip_safe=False,
       install_requires=[
