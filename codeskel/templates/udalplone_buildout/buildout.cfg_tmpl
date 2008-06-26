@@ -33,7 +33,7 @@ recipe = cs.recipe.udalplone<3.0
 
 [plone]
 recipe = plone.recipe.plone25install
-url = ${udalplone:plone_url}
+url = \${udalplone:plone_url}
 
 [zope2]
 recipe = plone.recipe.zope2install>=2.2
