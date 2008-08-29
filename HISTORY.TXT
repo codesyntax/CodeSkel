@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.2.1
+-----
+
+- Rename HISTORY.txt to HISTORY.TXT
+
 1.2
 ----
 
