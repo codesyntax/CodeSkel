@@ -2,8 +2,17 @@
 HISTORY
 =======
 
-1.1
+1.2
 ----
+
+- Added varnish and supervisor to buildout templates
+
+- Some polishment in plone2.5_theme template, removing useless
+  DTML-based CSS files and some folders
+
+
+1.1.1
+------
 
 - First working version. It contains the following templates:
 
@@ -19,9 +28,6 @@ HISTORY
    customizations:
      - uses cs.donedukia and cs.navigation
      - installs an egg-omelette
-     - varnish for production environment
-     - backups for production environment
-     - supervisor for production environment
 
  - udalplone_buildout: a base buildout for UdalPlone, based on
    Plone 2.5.x
