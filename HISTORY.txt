@@ -1,4 +1,35 @@
-0.1
-====
 
-- Initial version
+HISTORY
+=======
+
+1.1
+----
+
+- First working version. It contains the following templates:
+
+ - plone2.5_theme: a simple egg-like theme for Plone 2.5.x using
+   GenericSetup profile to install itself and Theme installation using
+   quickinstaller script
+
+ - plone3_theme: a simple egg line theme for Plone 3.x using
+   GenericSetup and not using zope3-like resources like ZopeSkel
+   template does.
+
+ - cs_plone3_buildout: a base buildout template with our
+   customizations:
+     - uses cs.donedukia and cs.navigation
+     - installs an egg-omelette
+     - varnish for production environment
+     - backups for production environment
+     - supervisor for production environment
+
+ - udalplone_buildout: a base buildout for UdalPlone, based on
+   Plone 2.5.x
+
+ - udalplone3_buildout: a base buildout for UdalPlone, based on Plone 3.x
+
+
+0.1 - 1.1
+---------
+
+- Initial testing non-working versions

@@ -69,6 +69,9 @@ http-address = ${http_port}
 debug-mode = on
 verbose-security = on
 
+environment = 
+  TZ CET
+  PYTHON_EGG_CACHE \${buildout:directory}/var/.python-eggs
 
 \# If you want Zope to know about any additional eggs, list them here.
 \# This should include any development eggs you listed in develop-eggs above,
