@@ -33,6 +33,6 @@ programs =
    30 varnish \${buildout:directory}/bin/varnish [-F]  true
 
 eventlisteners = 
-   TICK_60 ${buildout:bin-directory}/memmon [-p instance=600MB]
+   TICK_60 \${buildout:bin-directory}/memmon [-p instance=600MB]
 
 

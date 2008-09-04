@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.2.5
+-----
+
+- More fixes in templates
+
 1.2.4
 -----
 
