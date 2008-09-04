@@ -84,6 +84,7 @@ eggs =
     cs.navigation
     cs.i18n
     cs.editablefooter
+    cs.donedukia
 
 \# If you want to register ZCML slugs for any packages, list them here.
 \# e.g. zcml = my.package my.other.package
@@ -93,6 +94,7 @@ zcml =
     cs.navigation
     cs.i18n
     cs.editablefooter
+    cs.donedukia
 
 products =
     \${buildout:directory}/products
