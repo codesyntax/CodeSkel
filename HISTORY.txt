@@ -2,6 +2,12 @@
 HISTORY
 =======
 
+1.2.3
+------
+
+- Added cs.donedukia to cs_plone3_buildout template
+
+
 1.2
 ----
 
