@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.2.4
+-----
+
+- Fixed deployment templates
+
 1.2.3
 ------
 
