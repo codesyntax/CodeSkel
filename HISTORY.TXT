@@ -2,6 +2,12 @@
 HISTORY
 =======
 
+1.2.7
+-----
+
+- svn reorganization with things mistakenly checked in to a tag.
+
+
 1.2.6
 -----
 
