@@ -2,6 +2,16 @@
 HISTORY
 =======
 
+1.2.6
+-----
+
+- Added missing utils.py in plone25_theme
+
+1.2.5
+-----
+
+- More fixes in templates
+
 1.2.4
 -----
 
