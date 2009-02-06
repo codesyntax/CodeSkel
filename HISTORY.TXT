@@ -1,6 +1,12 @@
 
 HISTORY
 =======
+1.2.8
+------
+
+- Add cs.plt.contentnegotiator and 2.1 branch of PloneLanguageTool to have content based language negotiator
+  [erral]
+
 
 1.2.7
 -----
