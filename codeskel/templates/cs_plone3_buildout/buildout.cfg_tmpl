@@ -4,6 +4,7 @@ parts =
     zope2
     translations
     productdistros
+    svnproducts
     instance
     omelette
     zopepy
@@ -46,19 +47,16 @@ recipe = infrae.subversion
 urls = 
   http://svn.plone.org/svn/collective/PloneTranslations/trunk PloneTranslations
 
-\# Use this section to download additional old-style products.
-\# List any number of URLs for product tarballs under URLs (separate
-\# with whitespace, or break over several lines, with subsequent lines
-\# indented). If any archives contain several products inside a top-level
-\# directory, list the archive file name (i.e. the last part of the URL,
-\# normally with a .tar.gz suffix or similar) under 'nested-packages'.
-\# If any archives extract to a product directory with a version suffix, list
-\# the archive name under 'version-suffix-packages'.
 [productdistros]
 recipe = plone.recipe.distros
 urls =
 nested-packages =
 version-suffix-packages =
+
+[snvproducts]
+recipe = infrae.subversion
+urls = 
+    http://svn.plone.org/svn/collective/PloneLanguageTool/branches/2.1/Products/PloneLanguageTool PloneLanguageTool
 
 [instance]
 recipe = plone.recipe.zope2instance
@@ -85,6 +83,7 @@ eggs =
     cs.i18n
     cs.editablefooter
     cs.donedukia
+    cs.plt.contentnegotiator
 
 \# If you want to register ZCML slugs for any packages, list them here.
 \# e.g. zcml = my.package my.other.package
@@ -95,6 +94,7 @@ zcml =
     cs.i18n
     cs.editablefooter
     cs.donedukia
+    cs.plt.contentnegotiator
 
 products =
     \${buildout:directory}/products
