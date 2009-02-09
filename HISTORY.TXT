@@ -1,6 +1,13 @@
 
 HISTORY
 =======
+
+1.2.9
+-------
+
+- Upgrade to Plone 3.2.1
+  [erral]
+
 1.2.8
 ------
 
