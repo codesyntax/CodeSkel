@@ -37,9 +37,10 @@ recipe = cs.recipe.udalplone>=3.0
 
 [zope2]
 recipe = plone.recipe.zope2install>=2.2
-url = http://www.zope.org/Products/Zope/2.10.7/Zope-2.10.7-final.tgz
+url = \${versions:zope2-url}
 fake-zope-eggs = True
 aditional-fake-eggs = 
+    ZODB3
     ZConfig
     pytz
 
