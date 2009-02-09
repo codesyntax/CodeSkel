@@ -1,55 +1,53 @@
 [buildout]
 parts =
     udalplone
-    plone
     zope2
-    translations
     productdistros
     svnproducts
     instance
     omelette
     zopepy
 
-\# Add additional egg download sources here. dist.plone.org contains archives
-\# of Plone packages.
+\# When buildout fails, uncomment this line
+\# index = http://pypi.zopyx.com
+
+extends = http://dist.plone.org/release/3.2.1/versions.cfg
+versions = versions
+
 find-links =
+    http://dist.plone.org/release/3.2.1	  
     http://code.codesyntax.com/static
     http://dist.plone.org
-    http://download.zope.org/ppix/
-    http://download.zope.org/distribution/
     http://effbot.org/downloads
 
-\# Add additional eggs here
-\# elementtree is required by Plone
 eggs =
-    elementtree
+    Plone
 
 \# Reference any eggs you are developing here, one per line
 \# e.g.: develop = src/my.package
 develop =
 
+\# To have a more updated version of PloneLanguageTool
+[version]
+Products.PloneLanguageTool = 2.1
+
+
 [udalplone]
 recipe = cs.recipe.udalplone>=3.0
 
-[plone]
-recipe = \${udalplone:ploneversion}
-
 [zope2]
 recipe = plone.recipe.zope2install>=2.2
+url = http://www.zope.org/Products/Zope/2.10.7/Zope-2.10.7-final.tgz
 fake-zope-eggs = True
-url = \${plone:zope2-url}
+aditional-fake-eggs = 
+    ZConfig
+    pytz
 
 [omelette]
 recipe = collective.recipe.omelette
 eggs = \${instance:eggs}
 products = \${instance:products}
 packages = \${zope2:location}/lib/python ./
-
-
-[translations]
-recipe = infrae.subversion
-urls = 
-  http://svn.plone.org/svn/collective/PloneTranslations/trunk PloneTranslations
 
 [productdistros]
 recipe = plone.recipe.distros
@@ -76,13 +74,8 @@ environment =
   TZ CET
   PYTHON_EGG_CACHE \${buildout:directory}/var/.python-eggs
 
-
-\# If you want Zope to know about any additional eggs, list them here.
-\# This should include any development eggs you listed in develop-eggs above,
-\# e.g. eggs = \${buildout:eggs} \${plone:eggs} my.package
 eggs =
     \${buildout:eggs}
-    \${plone:eggs}
     \${udalplone:eggs}
 
 \# If you want to register ZCML slugs for any packages, list them here.
@@ -93,9 +86,7 @@ zcml =
 products =
     \${buildout:directory}/products
     \${productdistros:location}
-    \${translations:location}
     \${svnproducts:location}
-    \${plone:products}
 
 
 [zopepy]
