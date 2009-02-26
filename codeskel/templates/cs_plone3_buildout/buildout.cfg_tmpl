@@ -27,7 +27,7 @@ eggs =
 develop =
 
 \# To have a more updated version of PloneLanguageTool
-[version]
+[versions]
 Products.PloneLanguageTool = 2.1
 
 [zope2]
@@ -59,15 +59,15 @@ urls =
 [instance]
 recipe = plone.recipe.zope2instance
 zope2-location = \${zope2:location}
-
 user = admin:admin
 http-address = ${http_port}
 debug-mode = on
 verbose-security = on
-
-environment = 
+environment-vars = 
   TZ CET
   PYTHON_EGG_CACHE \${buildout:directory}/var/.python-eggs
+  \# Uncomment this line and enable needed languages
+  \# PTS_LANGUAGES es, eu, en
 
 eggs =
     \${buildout:eggs}
