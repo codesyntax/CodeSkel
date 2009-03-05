@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '1.3.4'
+version = '1.4.1'
 
 setup(name='CodeSkel',
       version=version,
