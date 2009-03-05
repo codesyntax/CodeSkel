@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.4.1
+------
+- egg_info weirdness
+  [erral]
+
 1.4
 -----
 - Added Django template
