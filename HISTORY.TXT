@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.4
+-----
+- Added Django template
+  [erral]
+
 1.3.2
 --------
 - Fix some Plone 3 buildout options
