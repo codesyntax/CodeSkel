@@ -28,6 +28,7 @@ setup(name='CodeSkel',
       zip_safe=False,
       install_requires=[
          "ZopeSkel",
+         "fez.djangoskel",
       ],
       entry_points="""
       [paste.paster_create_template]
@@ -36,5 +37,6 @@ setup(name='CodeSkel',
       cs_plone3_buildout = codeskel:Plone3Buildout
       udalplone_buildout = codeskel:UdalPloneBuildout
       udalplone3_buildout = codeskel:UdalPlone3Buildout
+      cs_django_buildout = codeskel:DjangoBuildoutTemplate
       """,
       )
