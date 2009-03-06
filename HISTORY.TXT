@@ -1,6 +1,10 @@
 
 HISTORY
 =======
+1.4.2
+------
+- A 'd' was missing in buildouts
+  [erral]
 
 1.4.1
 ------

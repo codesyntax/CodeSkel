@@ -34,7 +34,7 @@ Products.PloneLanguageTool = 2.1
 recipe = plone.recipe.zope2install
 url = \${versions:zope2-url}
 fake-zope-eggs = True
-aditional-fake-eggs = 
+additional-fake-eggs = 
     ZODB3
     ZConfig
     pytz
