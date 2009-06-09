@@ -1,6 +1,11 @@
 
 HISTORY
 =======
+1.4.3
+-----
+- Rewrite cs_django_buildout template to add omelette and remove django-settings parts
+  [erral]
+
 1.4.2
 ------
 - A 'd' was missing in buildouts
