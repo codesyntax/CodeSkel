@@ -3,14 +3,17 @@ parts =
     django
     omelette
 
+extensions =
+    buildout.eggtractor
+
 find-links = 
     http://code.codesyntax.com/static
 
 \# Add here any other egg you want to depend on
 eggs =
    
-\# Add here any other egg you are developing now
-develop-eggs = 
+
+develop = 
     \#src/my-small-egg
 
 [django]
