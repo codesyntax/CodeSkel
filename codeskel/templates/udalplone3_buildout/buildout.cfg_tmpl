@@ -11,21 +11,27 @@ parts =
 \# When buildout fails, uncomment this line
 \# index = http://pypi.zopyx.com
 
-extends = http://dist.plone.org/release/3.2.1/versions.cfg
+extensions = buildout.eggtractor
+
+extends = http://dist.plone.org/release/3.2.2/versions.cfg
 versions = versions
 
 find-links =
-    http://dist.plone.org/release/3.2.1	  
+    http://dist.plone.org/release/3.2.2
     http://code.codesyntax.com/static
-    http://dist.plone.org
-    http://effbot.org/downloads
+    http://dist.plone.org/thirdparty
 
 eggs =
+    PIL
     Plone
 
 \# Reference any eggs you are developing here, one per line
 \# e.g.: develop = src/my.package
 develop =
+
+\# Port configuration
+[ports]
+zope = ${http_port}
 
 \# To have a more updated version of PloneLanguageTool
 [versions]
@@ -66,7 +72,7 @@ urls =
 recipe = plone.recipe.zope2instance
 zope2-location = \${zope2:location}
 user = admin:admin
-http-address = ${http_port}
+http-address = \${ports:zope}
 debug-mode = on
 verbose-security = on
 environment-vars = 

@@ -7,6 +7,9 @@ HISTORY
 - Add buildout eggtractor
   [erral]
 
+- Deployment fixes
+  [erral]
+
 1.4.2
 ------
 - Rewrite cs_django_buildout template to add omelette and remove django-settings parts
