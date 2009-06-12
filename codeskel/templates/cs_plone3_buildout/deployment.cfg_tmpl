@@ -5,9 +5,9 @@ parts +=
     supervisor
 
 [ports]
-zope = CHANGE-ME
-zeo = CHANGE-ME
-supervisor = CHANGE-ME
+zope = 8080
+zeo = 8081
+supervisor = 8082
 
 [users]
 zope = csmant
@@ -20,7 +20,8 @@ zope2-location = \${zope2:location}
 [instance]
 debug-mode = off
 verbose-security = off
-zeo-client = False
+zeo-client = True
+zeo-address = 127.0.0.1:\${ports:zeo}
 
 [supervisor]
 recipe = collective.recipe.supervisor

@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.4.4
+-----
+- Add defaults for deployment ports
+  [erral]
+
 1.4.3
 -----
 - Add buildout eggtractor
