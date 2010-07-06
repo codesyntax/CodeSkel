@@ -2,6 +2,12 @@
 HISTORY
 =======
 
+1.6
+-----
+
+- Add plone4 buildout
+  [erral]
+
 1.5.1
 -----
 
