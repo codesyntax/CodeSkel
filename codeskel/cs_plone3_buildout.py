@@ -13,6 +13,11 @@ class Plone3Buildout(BaseTemplate):
             default=8080),
         ]
 
+    def pre(self, command, output_dir, vars):
+        super(BaseTemplate, self).pre(command, output_dir, vars)
+        vars['zeo_port'] = int(vars['http_port']) + 1
+        vars['supervisor_port'] = int(vars['zeo_port']) + 1
+        
     def post(self, command, output_dir, vars):
         print "-----------------------------------------------------------"
         print "Generation finished"

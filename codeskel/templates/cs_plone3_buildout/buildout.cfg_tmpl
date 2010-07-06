@@ -1,28 +1,13 @@
 [buildout]
-parts =
-    zope2
-    productdistros
-    svnproducts
-    instance
-    omelette
-    zopepy
+
+projectname = ${project}
 
 \# When buildout fails, uncomment this line
 \# index = http://pypi.zopyx.com
 
-extensions = buildout.eggtractor
+extends = http://code.codesyntax.com/static/buildout.cfg
 
-extends = http://dist.plone.org/release/3.2.2/versions.cfg
 versions = versions
-
-find-links =
-    http://dist.plone.org/release/3.2.2
-    http://code.codesyntax.com/static
-    http://dist.plone.org/thirdparty
-
-eggs =
-    PIL
-    Plone
 
 \# Reference any eggs you are developing here, one per line
 \# e.g.: develop = src/my.package
@@ -31,76 +16,23 @@ develop =
 \# Port configuration
 [ports]
 zope = ${http_port}
-
-\# To have a more updated version of PloneLanguageTool
-[versions]
-Products.PloneLanguageTool = 2.1
-
-[zope2]
-recipe = plone.recipe.zope2install
-url = \${versions:zope2-url}
-fake-zope-eggs = True
-additional-fake-eggs = 
-    ZODB3
-    ZConfig
-    pytz
-
-[omelette]
-recipe = collective.recipe.omelette
-eggs = \${instance:eggs}
-products = \${instance:products}
-packages = \${zope2:location}/lib/python ./
-
-
-[productdistros]
-recipe = plone.recipe.distros
-urls =
-nested-packages =
-version-suffix-packages =
-
-[svnproducts]
-recipe = infrae.subversion
-urls = 
+zeo = ${zeo_port}
+supervisor = ${supervisor_port}
 
 [instance]
-recipe = plone.recipe.zope2instance
-zope2-location = \${zope2:location}
-user = admin:admin
 http-address = \${ports:zope}
 debug-mode = on
 verbose-security = on
-environment-vars = 
-  TZ CET
-  PYTHON_EGG_CACHE \${buildout:directory}/var/.python-eggs
-  \# Uncomment this line and enable needed languages
+zeo-client = True
+zeo-address = \${ports:zeo}
+
+\# Uncomment this line and enable needed languages
+\#environment-vars += 
   \# PTS_LANGUAGES es, eu, en
 
-eggs =
-    \${buildout:eggs}
-    Products.CacheSetup
-    Products.LinguaPlone
-    cs.navigation
-    cs.i18n
-    cs.editablefooter
-    cs.donedukia
-    cs.plt.contentnegotiator
 
-\# If you want to register ZCML slugs for any packages, list them here.
-\# e.g. zcml = my.package my.other.package
-zcml =
-    Products.CacheSetup
-    Products.LinguaPlone
-    cs.navigation
-    cs.i18n
-    cs.editablefooter
-    cs.donedukia
-    cs.plt.contentnegotiator
-
-products =
-    \${buildout:directory}/products
-    \${productdistros:location}
-    \${svnproducts:location}
-
+[supervisor]
+serverurl = http://127.0.0.1:\${ports:supervisor}
 
 [zopepy]
 recipe = zc.recipe.egg
