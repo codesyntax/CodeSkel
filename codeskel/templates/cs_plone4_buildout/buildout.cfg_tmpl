@@ -1,0 +1,101 @@
+[buildout]
+projectname = ${project}
+
+parts = 
+    instance
+    zeo
+    omelette
+    zopepy
+
+\# When buildout fails, uncomment this line
+\# index = http://pypi.zopyx.com
+\# Change the number here to change the version of Plone being used
+extends = 
+    http://dist.plone.org/release/4.0b4/versions.cfg
+
+versions = versions
+
+\# Add additional egg download sources here. dist.plone.org contains archives
+\# of Plone packages.
+find-links =
+    http://dist.plone.org/release/4.0b4
+    http://dist.plone.org/thirdparty
+    http://code.codesyntax.com/static
+
+\# Add additional eggs here
+eggs =
+    PIL
+
+
+\# Reference any eggs you are developing here, one per line
+\# e.g.: develop = src/my.package
+develop =
+
+[versions]
+PIL = 1.1.7
+
+\# Port configuration
+[ports]
+zope = ${http_port}
+zeo = ${zeo_port}
+supervisor = ${supervisor_port}
+
+[instance]
+recipe = plone.recipe.zope2instance
+user = admin:admin
+http-address = \${ports:zope}
+debug-mode = on
+verbose-security = on
+blob-storage = var/blobstorage
+shared-blob = on
+zeo-client = True
+zeo-address = \${ports:zeo}
+
+eggs =
+    Zope2
+    Plone
+    \${buildout:eggs}
+
+
+environment-vars =
+    zope_i18n_compile_mo_files = true
+    TZ = CET
+    PYTHON_EGG_CACHE = \${buildout:directory}/var/.python-eggs
+   \# Uncomment this line and enable needed languages
+   \# PTS_LANGUAGES es, eu, en
+
+zcml = 
+
+products =
+    \${buildout:directory}/products
+
+[zeo]
+recipe = plone.recipe.zeoserver
+zeo-address = \${ports:zeo}
+
+
+[supervisor]
+recipe = collective.recipe.supervisor
+port = \${ports:supervisor}     
+serverurl = http://127.0.0.1:\${ports:supervisor}
+plugins = superlance
+programs =
+   10 zeo\${buildout:projectname} \${zeo:location}/bin/runzeo true 
+   20 zope\${buildout:projectname}\${instance:http-address} \${instance:location}/bin/runzope true 
+
+eventlisteners = 
+   Memmon TICK_60 \${buildout:bin-directory}/memmon [-p zope\${buildout:projectname}\${instance:http-address}=700MB -m support@codesyntax.com]
+   MailMe PROCESS_STATE_EXITED \${buildout:bin-directory}/crashmail [-p zope\${buildout:projectname}\${instance:http-address} -m support@codesyntax.com]
+
+
+[omelette]
+recipe = collective.recipe.omelette
+eggs = \${instance:eggs}
+products = \${instance:products}
+
+
+[zopepy]
+recipe = zc.recipe.egg
+eggs = \${instance:eggs}
+interpreter = zopepy
+scripts = zopepy

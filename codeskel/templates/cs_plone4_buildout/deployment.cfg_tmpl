@@ -1,0 +1,13 @@
+[buildout]
+extends = buildout.cfg
+parts +=
+    supervisor
+
+develop = 
+
+[instance]
+debug-mode = off
+verbose-security = off
+zeo-client = True
+zeo-address = \${ports:zeo}
+

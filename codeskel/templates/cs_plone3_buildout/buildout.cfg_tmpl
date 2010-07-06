@@ -32,6 +32,7 @@ zeo-address = \${ports:zeo}
 
 
 [supervisor]
+port = \${ports:supervisor}
 serverurl = http://127.0.0.1:\${ports:supervisor}
 
 [zopepy]
