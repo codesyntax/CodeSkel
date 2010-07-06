@@ -2,6 +2,24 @@
 HISTORY
 =======
 
+1.5.1
+-----
+
+- Fix cs_plone3_buildout timestamp bug
+  [erral]
+
+1.5
+----
+
+- Remove obsolete Plone 2.5 templates
+  [erral]
+
+- Remove Django buildout
+  [erral]
+
+- Use superbuildout for plone buildout templates
+  [erral]
+
 1.4.4
 -----
 - Add defaults for deployment ports
