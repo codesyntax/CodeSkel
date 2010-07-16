@@ -2,6 +2,13 @@
 HISTORY
 =======
 
+1.6.1
+-----
+
+- Fix restructured-text syntax
+  [erral]
+
+
 1.6
 -----
 
@@ -43,7 +50,6 @@ HISTORY
 ------
 - Rewrite cs_django_buildout template to add omelette and remove django-settings parts
   [erral]
-
 
 - A 'd' was missing in buildouts
   [erral]
@@ -140,6 +146,7 @@ HISTORY
 
  - cs_plone3_buildout: a base buildout template with our
    customizations:
+
      - uses cs.donedukia and cs.navigation
      - installs an egg-omelette
 
