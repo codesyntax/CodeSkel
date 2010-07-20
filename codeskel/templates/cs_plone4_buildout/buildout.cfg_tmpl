@@ -33,6 +33,7 @@ develop =
 
 [versions]
 PIL = 1.1.7
+supervisor = 3.0a7
 
 \# Port configuration
 [ports]
@@ -81,7 +82,7 @@ serverurl = http://127.0.0.1:\${ports:supervisor}
 plugins = superlance
 programs =
    10 zeo\${buildout:projectname} \${zeo:location}/bin/runzeo true 
-   20 zope\${buildout:projectname}\${instance:http-address} \${instance:location}/bin/runzope true 
+   20 zope\${buildout:projectname}\${instance:http-address} \${instance:location}/bin/instance [console] true 
 
 eventlisteners = 
    Memmon TICK_60 \${buildout:bin-directory}/memmon [-p zope\${buildout:projectname}\${instance:http-address}=700MB -m support@codesyntax.com]

@@ -2,6 +2,16 @@
 HISTORY
 =======
 
+1.6.2
+------
+
+- Add version pinning for supervisor (Plone 4)
+  [erral]
+
+- Correct supervisor script path (Plone 4)
+  [erral]
+
+
 1.6.1
 -----
 
