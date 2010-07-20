@@ -2,6 +2,16 @@
 HISTORY
 =======
 
+1.6.3
+------
+
+- One more fix for supervisor scripts (Plone 4)
+  [erral]
+
+- Upgrade Plone to 4.0.b5
+  [erral]
+
+
 1.6.2
 ------
 

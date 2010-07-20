@@ -11,14 +11,14 @@ parts =
 \# index = http://pypi.zopyx.com
 \# Change the number here to change the version of Plone being used
 extends = 
-    http://dist.plone.org/release/4.0b4/versions.cfg
+    http://dist.plone.org/release/4.0b5/versions.cfg
 
 versions = versions
 
 \# Add additional egg download sources here. dist.plone.org contains archives
 \# of Plone packages.
 find-links =
-    http://dist.plone.org/release/4.0b4
+    http://dist.plone.org/release/4.0b5
     http://dist.plone.org/thirdparty
     http://code.codesyntax.com/static
 
@@ -81,8 +81,8 @@ port = \${ports:supervisor}
 serverurl = http://127.0.0.1:\${ports:supervisor}
 plugins = superlance
 programs =
-   10 zeo\${buildout:projectname} \${zeo:location}/bin/runzeo true 
-   20 zope\${buildout:projectname}\${instance:http-address} \${instance:location}/bin/instance [console] true 
+   10 zeo\${buildout:projectname} \${buildout:directory}/bin/zeo [fg] true 
+   20 zope\${buildout:projectname}\${instance:http-address} \${buildout:directory}/bin/instance [console] true 
 
 eventlisteners = 
    Memmon TICK_60 \${buildout:bin-directory}/memmon [-p zope\${buildout:projectname}\${instance:http-address}=700MB -m support@codesyntax.com]
