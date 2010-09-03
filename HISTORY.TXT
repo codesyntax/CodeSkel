@@ -2,6 +2,15 @@
 HISTORY
 =======
 
+1.6.4
+-----
+
+- Plone 4 is already out!
+  [erral]
+
+- Add mr.developer and buildout.dumppickedversions
+  [erral]
+
 1.6.3
 ------
 
