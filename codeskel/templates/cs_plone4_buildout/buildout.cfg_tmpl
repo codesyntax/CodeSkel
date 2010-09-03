@@ -1,6 +1,10 @@
 [buildout]
 projectname = ${project}
 
+extensions = 
+    mr.developer
+    buildout.dumppickedversions
+
 parts = 
     instance
     zeo
@@ -11,14 +15,14 @@ parts =
 \# index = http://pypi.zopyx.com
 \# Change the number here to change the version of Plone being used
 extends = 
-    http://dist.plone.org/release/4.0b5/versions.cfg
+    http://dist.plone.org/release/4.0/versions.cfg
 
 versions = versions
 
 \# Add additional egg download sources here. dist.plone.org contains archives
 \# of Plone packages.
 find-links =
-    http://dist.plone.org/release/4.0b5
+    http://dist.plone.org/release/4.0
     http://dist.plone.org/thirdparty
     http://code.codesyntax.com/static
 
@@ -33,7 +37,7 @@ develop =
 
 [versions]
 PIL = 1.1.7
-supervisor = 3.0a7
+supervisor = 3.0a9
 
 \# Port configuration
 [ports]
