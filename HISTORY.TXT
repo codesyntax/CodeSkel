@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.6.5
+-----
+- Forgot to add buildout.dumppickedversions options
+  [erral]
+
 1.6.4
 -----
 

@@ -5,6 +5,10 @@ extensions =
     mr.developer
     buildout.dumppickedversions
 
+dump-picked-versions-file = versions.cfg
+overwrite-picked-versions-file = False
+
+
 parts = 
     instance
     zeo
