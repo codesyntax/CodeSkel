@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.6.6
+------
+- New Plone version (4.0.1)
+  [erral]
+
 1.6.5
 -----
 - Forgot to add buildout.dumppickedversions options
