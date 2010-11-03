@@ -1,6 +1,13 @@
 
 HISTORY
 =======
+
+1.6.9
+------
+- It's not possible to parametrize easily the Plone version
+  [erral]
+
+
 1.6.8
 ------
 - Update Plone 4 buildout with own repository
