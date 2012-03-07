@@ -63,7 +63,7 @@ class ${contenttype_classname}(dexterity.Item):
 \# of this type by uncommenting the grok.name line below or by
 \# changing the view class name and template filename to View / view.pt.
 
-class SampleView(grok.View):
+class ${contenttype_classname}View(grok.View):
     grok.context(${interface_name})
     grok.require('zope2.View')
     
