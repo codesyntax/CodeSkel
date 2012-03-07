@@ -39,7 +39,7 @@ setup(name='CodeSkel',
       cs_dexterity = codeskel:CSDexterity
 
       [zopeskel.zopeskel_sub_template]
-      dexterity_cs = codeskel:localcommands.dexterity:DexterityCS
+      dexterity_cs = codeskel.localcommands.dexterity:DexterityCS
       
       """,
       )
