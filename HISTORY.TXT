@@ -7,6 +7,14 @@ HISTORY
 - It's not possible to parametrize easily the Plone version
   [erral]
 
+- Remove details from plone3_theme template
+  [erral]
+
+- Add products directory to plone4_buildout
+  [erral]
+
+- Upgrade Plone 4 version 
+  [erral]
 
 1.6.8
 ------
