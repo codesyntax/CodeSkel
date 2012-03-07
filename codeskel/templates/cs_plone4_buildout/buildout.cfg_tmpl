@@ -5,10 +5,6 @@ extensions =
     mr.developer
     buildout.dumppickedversions
 
-dump-picked-versions-file = versions.cfg
-overwrite-picked-versions-file = False
-
-
 parts = 
     instance
     zeo
@@ -16,23 +12,23 @@ parts =
     zopepy
 
 \# When buildout fails, uncomment this line
-\# index = http://pypi.zopyx.com
+\# index = http://b.pypi.python.org
 \# Change the number here to change the version of Plone being used
 extends = 
-    http://dist.plone.org/release/4.0.1/versions.cfg
+    http://dist.plone.org/release/4.2/versions.cfg
 
 versions = versions
 
 \# Add additional egg download sources here. dist.plone.org contains archives
 \# of Plone packages.
 find-links =
-    http://dist.plone.org/release/4.0.1
+    http://dist.plone.org/release/4.2
     http://dist.plone.org/thirdparty
     http://www.codesyntax.com/products/simple
 
 \# Add additional eggs here
 eggs =
-    PIL
+    Pillow
 
 
 \# Reference any eggs you are developing here, one per line
@@ -40,8 +36,7 @@ eggs =
 develop =
 
 [versions]
-PIL = 1.1.7
-supervisor = 3.0a9
+supervisor = 3.0a12
 
 \# Port configuration
 [ports]
