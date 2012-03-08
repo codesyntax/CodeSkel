@@ -14,6 +14,12 @@ HISTORY
 - Upgrade Plone 4 version 
   [erral]
 
+- Add base template for Dexterity based content-types 
+  with customizations from CS
+  [erral]
+
+- Add a localcommand to add a content-type based on Dexterity
+  [erral]
 
 
 1.6.9
