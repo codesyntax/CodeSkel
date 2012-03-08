@@ -2,10 +2,8 @@
 HISTORY
 =======
 
-1.6.9
-------
-- It's not possible to parametrize easily the Plone version
-  [erral]
+1.6.10
+-------
 
 - Remove details from plone3_theme template
   [erral]
@@ -14,6 +12,13 @@ HISTORY
   [erral]
 
 - Upgrade Plone 4 version 
+  [erral]
+
+
+
+1.6.9
+------
+- It's not possible to parametrize easily the Plone version
   [erral]
 
 1.6.8
