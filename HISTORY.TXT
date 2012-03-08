@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.6.10
+1.7
 -------
 
 - Remove details from plone3_theme template
