@@ -6,7 +6,7 @@
 #   
 #      <!-- -*- extra stuff goes here -*- -->
        <permission
-          id="$add_permssion_id"
+          id="$add_permission_id"
 	  title="$add_permission_name"
 	  />       
 

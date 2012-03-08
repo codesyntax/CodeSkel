@@ -36,7 +36,7 @@ setup(name='CodeSkel',
       cs_plone3_buildout = codeskel:Plone3Buildout
       cs_plone4_buildout = codeskel:Plone4Buildout
       udalplone3_buildout = codeskel:UdalPlone3Buildout
-      cs_dexterity = codeskel:CSDexterity
+      csdexterity = codeskel:CSDexterity
 
       [zopeskel.zopeskel_sub_template]
       cs_dexterity_content = codeskel:DexterityContentCS
