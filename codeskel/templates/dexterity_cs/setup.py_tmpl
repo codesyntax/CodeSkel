@@ -26,8 +26,6 @@ setup(name=${repr($project)},
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'plone.app.dexterity',
-          'plone.namedfile [blobs]',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
