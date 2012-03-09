@@ -2,6 +2,13 @@
 HISTORY
 =======
 
+
+1.7.1
+----------
+- Add __init__.py to browser
+  [erral]
+
+
 1.7
 -------
 
