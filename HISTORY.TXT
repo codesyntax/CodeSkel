@@ -2,6 +2,10 @@
 HISTORY
 =======
 
+1.7.2
+----------
+- Fix possible path issue in Plone 4.2b2
+  [erral]
 
 1.7.1
 ----------
