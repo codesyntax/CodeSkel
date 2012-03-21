@@ -2,6 +2,12 @@
 HISTORY
 =======
 
+1.8
+-------
+
+- Remove old Plone 3 templates
+  [erral]
+
 1.7.2
 ----------
 - Fix possible path issue in Plone 4.2b2

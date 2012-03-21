@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '1.7.3'
+version = '1.8'
 
 setup(name='CodeSkel',
       version=version,
@@ -33,9 +33,7 @@ setup(name='CodeSkel',
       entry_points="""
       [paste.paster_create_template]
       cs_plone3_theme = codeskel:Plone3Theme
-      cs_plone3_buildout = codeskel:Plone3Buildout
       cs_plone4_buildout = codeskel:Plone4Buildout
-      udalplone3_buildout = codeskel:UdalPlone3Buildout
       csdexterity = codeskel:CSDexterity
 
       [zopeskel.zopeskel_sub_template]
