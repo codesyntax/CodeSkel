@@ -6,7 +6,8 @@ version = '1.8.1'
 setup(name='CodeSkel',
       version=version,
       description="A collection of skeletons for quickstarting CS projects.",
-      long_description=open('HISTORY.TXT','r').read(),
+      long_description=open("README.txt").read() + "\n" +
+                       open('HISTORY.TXT','r').read(),
       classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Framework :: Zope2",

@@ -1,7 +1,8 @@
 Introduction
 ============
 
-CodeSkel provides a collection of skeletons for quickstarting Plone projects.
+CodeSkel provides a collection of skeletons for quickstarting Plone projects personalized
+after repeating many times several changes in our Plone projects
 
 All skeletons are available as PasteScript_ templates and can be used
 via the ''paster'' commandline tool. For example to create a package
@@ -16,62 +17,62 @@ Please contribute by submitting patches for what you consider 'best of
 breed' file layouts for starting Zope projects.
 
 .. _PasteScript: http://pythonpaste.org/script/
-.. _Subversion repository: http://code.codesyntax.com/private/CodeSkel/trunk#egg=CodeSkel-dev
 
 
 Available templates
 ===================
 
-Development templates
----------------------
-cs_plone2.5_theme
-  A template to create a new Zope 2 products for Plone 2.5
-  site. If you are targetting Plone 3 please use the cs_plone3_theme template
-  instead.
+cs_plone4_buildout
+  A base template for a Plone 4 based buildout. It has a single zeo-based instance, 
+  zeo server configuration and also a supervisor configuration.
+  It also adds an egg omelette.
+  The port configuration is simplified to a single change in one place.
+  It also creates a projectname variable to use it throughout the buildout file
+
 
 cs_plone3_theme
-  This template creates a theme package for Plone 3.0. This is the succesor
-  to the popular DIYPloneStyle_ product.
+  This template creates a theme package for Plone 3 and 4. This is the successor of
+  ZopeSkel provided plone3_theme but without the resource directories for CSS and images
+  because our designers prefer to work with skin-based folders and urls without ++ :)
+
+dexterity_cs
+  A dexterity based package template based on the ZopeSkel provided one but some additions
+  based on archeytype template from ZopeSkel
 
 
-.. _DIYPloneStyle: http://plone.org/products/diyplonestyle
+Local commands
+---------------
 
+This package adds also a local command support for dexterity_cs to add a dexterity based content
+type.
 
-Hosting / deployment templates
-------------------------------
+cs_dexterity_content
+  This local command adds a new dexterity based content-type, with a simple view and creates all 
+  templates in a single folder instead of one folder per content type as done by the 
+  zopeskel.dexterity product's localcommand
+  It also adds permission information in the same way as the contenttype localcommand does
+  for archetype template
 
-cs_plone3_buildout
-  A basic buildout_ based instance for Plone 3.1.x projects. If you also need
-  ZEO or caching take a look at the plone_hosting template.
+Installation
+==============
 
-udalplone_buildout
-  A basic buildout to install a UdalPlone (Plone 2.5.x)
+DO NOT INSTALL THIS PACKAGE IN THE SYSTEM LIBRARY. USE A VIRTUALENV TO INSTALL IT. 
 
-udalplone3_buildout
-  A basic buildout to install a UdalPlone (Plone 3.x)
+This suggestion follows `Mikko Ohtamaa's recommendation`_::
 
-.. _buildout: http://plone.org/documentation/tutorial/buildout
-.. _varnish: http://varnish.projects.linpro.no
+  The internet is full of tutorial saying easy_install ZopeSkel. If you ever encounter this 
+  kind of tutorial, it's wrong.
 
+  Do not never use system paster command.
 
-Testing
--------
+  Do not ever run sudo easy_install ZopeSkel. Do not ever run paster local commands using a 
+  paster command from your system-wide Python installation.
+  
+We have been fighting for long with system-wide ZopeSkel and some time ago started following 
+Mikko's recommendation and now we have almost zero problems when working with ZopeSkel/CodeSkel.
 
-Since version 1.5, CodeSkel has tests.  It's required to run these
-before checking in; they can be run like::
+So, create a virtualenv_ and install CodeSkel in there, it will automatically pull 
+ZopeSkel (version < 3 of course) and zopeskel.dexterity
 
-    $ python setup.py test
-
-You can also set a test environment using the buildout bootstrap::
-
-    $ python boostrap.py
-    $ bin/buildout
-
-You will then have a `test` script available::
-
-    $ bin/test
-
-You can even run just one test::
-
-    $ bin/test -t silva_buildout
-
+.. _`Mikko Ohtamaa's recommendation`: http://opensourcehacker.com/2010/04/13/using-paster-create-command-with-buildout-and-avoiding-the-infamous-dependency-issue/
+.. _virtualenv: http://pypi.python.org/pypi/virtualenv
