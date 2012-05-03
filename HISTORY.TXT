@@ -2,6 +2,13 @@
 HISTORY
 =======
 
+1.8.2 (2012/05/03)
+-------------------
+
+- Fix documentation
+  [erral]
+
+
 1.8.1 (2012/05/03)
 --------------------
 - Fix ZopeSkel dependency to <= 2.99
