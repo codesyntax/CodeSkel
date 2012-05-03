@@ -28,7 +28,7 @@ setup(name='CodeSkel',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-         'ZopeSkel < 3',
+         'ZopeSkel <= 2.99' 
          'zopeskel.dexterity',
       ],
       entry_points="""

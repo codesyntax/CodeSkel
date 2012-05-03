@@ -4,6 +4,8 @@ HISTORY
 
 1.8.1 (UNRELEASED)
 --------------------
+- Fix ZopeSkel dependency to <= 2.99
+  [erral]
 
 - Fix doc
   [erral]
