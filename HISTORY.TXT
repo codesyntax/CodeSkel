@@ -5,6 +5,8 @@ HISTORY
 1.8.3 (UNRELEASED)
 --------------------
 
+- Add Sunburst Theme as default for cs_plone3_themes
+  [erral]
 
 1.8.2 (2012/05/03)
 -------------------
