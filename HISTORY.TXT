@@ -2,11 +2,15 @@
 HISTORY
 =======
 
-1.8.3 (UNRELEASED)
+1.8.3 (2012/05/09)
 --------------------
 
 - Add Sunburst Theme as default for cs_plone3_themes
   [erral]
+
+- Fix broken template
+  [erral]
+
 
 1.8.2 (2012/05/03)
 -------------------
