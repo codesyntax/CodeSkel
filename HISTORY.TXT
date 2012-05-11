@@ -4,6 +4,8 @@ HISTORY
 
 1.8.6 (UNRELEASED)
 -----------------------
+- Remove 'media' in CSS
+  [erral]
 
 1.8.5 (2012/05/11)
 ---------------------
