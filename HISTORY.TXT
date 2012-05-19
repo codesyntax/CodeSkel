@@ -5,6 +5,9 @@ HISTORY
 1.8.7 (UNRELEASED)
 ---------------------
 
+- Change project's url
+  [erral]
+
 1.8.6 (2012/05/19)
 -----------------------
 - Remove 'media' in CSS
