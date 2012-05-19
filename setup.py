@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import sys, os
 
 version = '1.8.6'
 
@@ -7,7 +6,7 @@ setup(name='CodeSkel',
       version=version,
       description="A collection of skeletons for quickstarting CS projects.",
       long_description=open("README.rst").read() + "\n" +
-                       open('HISTORY.TXT','r').read(),
+                       open('HISTORY.TXT', 'r').read(),
       classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Framework :: Zope2",
@@ -18,7 +17,7 @@ setup(name='CodeSkel',
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        ], 
+        ],
       keywords='web zope command-line skeleton project',
       author='Mikel Larreategi',
       author_email='mlarreategi@codesyntax.com',
@@ -39,6 +38,5 @@ setup(name='CodeSkel',
 
       [zopeskel.zopeskel_sub_template]
       cs_dexterity_content = codeskel:DexterityContentCS
-      
       """,
       )
