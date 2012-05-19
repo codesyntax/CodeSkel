@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.8.7 (UNRELEASED)
+1.8.7 (2012/05/19)
 ---------------------
 
 - Change project's url
