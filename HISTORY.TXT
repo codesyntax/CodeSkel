@@ -7,7 +7,10 @@ HISTORY
 - Remove 'media' in CSS
   [erral]
 
-- Add instructions for eggs and zcml sections
+- Add instructions for eggs and zcml sections in buildout template
+  [erral]
+
+- Add missing sources section in buildout-template
   [erral]
 
 1.8.5 (2012/05/11)

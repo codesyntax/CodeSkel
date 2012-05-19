@@ -117,4 +117,9 @@ eggs = \${instance:eggs}
 interpreter = zopepy
 scripts = zopepy
 
+\# Add here your develop eggs
+\# you can activate them using bin/develop
+\# for documentation about using git or svn urls, check
+\# http://pypi.python.org/pypi/mr.developer
+[sources]
 
