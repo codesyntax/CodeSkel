@@ -7,6 +7,9 @@ HISTORY
 - Remove 'media' in CSS
   [erral]
 
+- Add instructions for eggs and zcml sections
+  [erral]
+
 1.8.5 (2012/05/11)
 ---------------------
 

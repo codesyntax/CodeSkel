@@ -24,11 +24,15 @@ versions = versions
 find-links =
     http://dist.plone.org/release/4.2
     http://dist.plone.org/thirdparty
-    http://www.codesyntax.com/products/simple
+    http://www.codesyntax.com/en/products/simple
 
-\# Add additional eggs here
+\# Add additional eggs needed for your project here
 eggs =
     Pillow
+
+
+\# Add here which products' zcml files will be loaded
+zcml =
 
 
 \# Reference any eggs you are developing here, one per line
@@ -55,6 +59,10 @@ shared-blob = on
 zeo-client = True
 zeo-address = \${ports:zeo}
 
+\# Do not add eggs here
+\# for consistence-sake, please add them in the eggs
+\# option for buildout part. Only Zope and Plone eggs
+\# must be listed here. Thank you.
 eggs =
     Zope2
     Plone
@@ -69,7 +77,11 @@ environment-vars =
     TZ CET
     PYTHON_EGG_CACHE = \${buildout:directory}/var/.python-eggs
 
+\# Do not add zcml here
+\# for consistence-sake, please add them in the zcml
+\# option for buildout part. Thank you.
 zcml = 
+    \${buildout:zcml}
 
 products =
     \${buildout:directory}/products
@@ -104,3 +116,5 @@ recipe = zc.recipe.egg
 eggs = \${instance:eggs}
 interpreter = zopepy
 scripts = zopepy
+
+
