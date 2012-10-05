@@ -60,7 +60,7 @@ debug-mode = on
 verbose-security = on
 blob-storage = \${buildout:directory}/var/blobstorage
 
-python-check-interval = ${checkinterval:value}
+python-check-interval = \${checkinterval:value}
 
 shared-blob = on
 zeo-client = True
