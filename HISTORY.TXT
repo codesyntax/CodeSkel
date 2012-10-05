@@ -2,8 +2,11 @@
 HISTORY
 =======
 
-1.8.10 (UNRELEASED)
+1.8.10 (2012/10/05)
 ---------------------
+
+- Can't handle urls with buildout parameters 
+  [erral]
 
 1.8.9 (2012/10/05)
 ---------------------
