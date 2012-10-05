@@ -6,6 +6,7 @@ extensions =
     buildout.dumppickedversions
 
 parts = 
+    checkinterval
     instance
     zeo
     omelette
@@ -48,6 +49,9 @@ zope = ${http_port}
 zeo = ${zeo_port}
 supervisor = ${supervisor_port}
 
+[checkinterval]
+recipe = cs.recipe.checkinterval
+
 [instance]
 recipe = plone.recipe.zope2instance
 user = admin:admin
@@ -55,6 +59,9 @@ http-address = \${ports:zope}
 debug-mode = on
 verbose-security = on
 blob-storage = \${buildout:directory}/var/blobstorage
+
+python-check-interval = ${checkinterval:value}
+
 shared-blob = on
 zeo-client = True
 zeo-address = \${ports:zeo}
