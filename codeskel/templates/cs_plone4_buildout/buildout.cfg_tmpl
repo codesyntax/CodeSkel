@@ -1,5 +1,6 @@
 [buildout]
 projectname = ${project}
+ploneversion = 4.2.1
 
 extensions = 
     mr.developer
@@ -16,14 +17,14 @@ parts =
 \# index = http://b.pypi.python.org
 \# Change the number here to change the version of Plone being used
 extends = 
-    http://dist.plone.org/release/4.2/versions.cfg
+    http://dist.plone.org/release/\${buildout:ploneversion}/versions.cfg
 
 versions = versions
 
 \# Add additional egg download sources here. dist.plone.org contains archives
 \# of Plone packages.
 find-links =
-    http://dist.plone.org/release/4.2
+    http://dist.plone.org/release/\${buildout:ploneversion}
     http://dist.plone.org/thirdparty
     http://www.codesyntax.com/en/products/simple
 

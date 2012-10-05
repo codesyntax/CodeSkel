@@ -5,6 +5,9 @@ HISTORY
 1.8.9 (2012/10/05)
 ---------------------
 
+- Add Plone version in a parameter
+  [erral]
+
 - Fix syntax error.
   [erral]
 
