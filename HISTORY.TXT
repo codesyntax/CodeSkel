@@ -11,6 +11,10 @@ HISTORY
 1.8.10 (2012/10/05)
 ---------------------
 
+- Added a new template based on Twitter Bootstrap Theme
+  provided by plonetheme.bootstrap
+  [erral]
+
 - Buildout can't handle urls with buildout parameters
   [erral]
 

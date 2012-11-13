@@ -34,6 +34,10 @@ cs_plone3_theme
   ZopeSkel provided plone3_theme but without the resource directories for CSS and images
   because our designers prefer to work with skin-based folders and urls without ++ :)
 
+bootstrap_template
+  A template based on ploneteheme.bootstrap, that provides a Twitter Bootstrap
+  based template for Plone.
+
 dexterity_cs
   A dexterity based package template based on the ZopeSkel provided one but some additions
   based on archeytype template from ZopeSkel
