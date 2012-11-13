@@ -32,6 +32,7 @@ setup(name='CodeSkel',
       ],
       entry_points="""
       [paste.paster_create_template]
+      bootstrap_theme = codeskel:BootstrapTheme
       cs_plone3_theme = codeskel:Plone3Theme
       cs_plone4_buildout = codeskel:Plone4Buildout
       csdexterity = codeskel:CSDexterity
