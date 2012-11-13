@@ -23,12 +23,11 @@ Available templates
 ===================
 
 cs_plone4_buildout
-  A base template for a Plone 4 based buildout. It has a single zeo-based instance, 
+  A base template for a Plone 4 based buildout. It has a single zeo-based instance,
   zeo server configuration and also a supervisor configuration.
   It also adds an egg omelette.
   The port configuration is simplified to a single change in one place.
   It also creates a projectname variable to use it throughout the buildout file
-
 
 cs_plone3_theme
   This template creates a theme package for Plone 3 and 4. This is the successor of
@@ -47,8 +46,8 @@ This package adds also a local command support for dexterity_cs to add a dexteri
 type.
 
 cs_dexterity_content
-  This local command adds a new dexterity based content-type, with a simple view and creates all 
-  templates in a single folder instead of one folder per content type as done by the 
+  This local command adds a new dexterity based content-type, with a simple view and creates all
+  templates in a single folder instead of one folder per content type as done by the
   zopeskel.dexterity product's localcommand
   It also adds permission information in the same way as the contenttype localcommand does
   for archetype template
@@ -56,22 +55,22 @@ cs_dexterity_content
 Installation
 ==============
 
-DO NOT INSTALL THIS PACKAGE IN THE SYSTEM LIBRARY. USE A VIRTUALENV TO INSTALL IT. 
+DO NOT INSTALL THIS PACKAGE IN THE SYSTEM LIBRARY. USE A VIRTUALENV TO INSTALL IT.
 
 This suggestion follows `Mikko Ohtamaa's recommendation`_::
 
-  The internet is full of tutorial saying easy_install ZopeSkel. If you ever encounter this 
+  The internet is full of tutorial saying easy_install ZopeSkel. If you ever encounter this
   kind of tutorial, it's wrong.
 
   Do not never use system paster command.
 
-  Do not ever run sudo easy_install ZopeSkel. Do not ever run paster local commands using a 
+  Do not ever run sudo easy_install ZopeSkel. Do not ever run paster local commands using a
   paster command from your system-wide Python installation.
-  
-We have been fighting for long with system-wide ZopeSkel and some time ago started following 
+
+We have been fighting for long with system-wide ZopeSkel and some time ago started following
 Mikko's recommendation and now we have almost zero problems when working with ZopeSkel/CodeSkel.
 
-So, create a virtualenv_ and install CodeSkel in there, it will automatically pull 
+So, create a virtualenv_ and install CodeSkel in there, it will automatically pull
 ZopeSkel (version < 3 of course) and zopeskel.dexterity
 
 .. _`Mikko Ohtamaa's recommendation`: http://opensourcehacker.com/2010/04/13/using-paster-create-command-with-buildout-and-avoiding-the-infamous-dependency-issue/
