@@ -4,7 +4,7 @@ from codeskel.base import var
 class Plone4Buildout(BaseTemplate):
     _template_dir = 'templates/cs_plone4_buildout'
     summary = "A buildout for Plone 4 projects"
-
+    use_local_commands = False
     required_templates = []
     use_cheetah = True
 
@@ -18,7 +18,7 @@ class Plone4Buildout(BaseTemplate):
         super(BaseTemplate, self).pre(command, output_dir, vars)
         vars['zeo_port'] = int(vars['http_port']) + 1
         vars['supervisor_port'] = int(vars['zeo_port']) + 1
-        
+
     def post(self, command, output_dir, vars):
         print "-----------------------------------------------------------"
         print "Generation finished"
