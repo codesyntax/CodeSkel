@@ -2,9 +2,12 @@
 HISTORY
 =======
 
-1.10.1 (unreleased)
+1.10.1 (2012/11/14)
 --------------------
 
+- Brown bag release, src directory was ignored by gitignore and thus
+  missing from the release
+  [erral]
 
 1.10 (2012/11/14)
 --------------------
