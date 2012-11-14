@@ -2,6 +2,16 @@
 HISTORY
 =======
 
+1.10 (2012/11/14)
+--------------------
+
+- New django buildout template
+  [erral]
+
+- Document the django project template
+  [erral]
+
+
 1.9 (2012/11/14)
 -----------------------
 
