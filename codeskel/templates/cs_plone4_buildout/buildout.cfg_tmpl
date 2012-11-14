@@ -1,13 +1,14 @@
 [buildout]
 projectname = ${project}
 
-extensions = 
+extensions =
     mr.developer
     buildout.dumppickedversions
 
-parts = 
+parts =
     checkinterval
     instance
+    instance2
     zeo
     omelette
     zopepy
@@ -15,7 +16,7 @@ parts =
 \# When buildout fails, uncomment this line
 \# index = http://b.pypi.python.org
 \# Change the number here to change the version of Plone being used
-extends = 
+extends =
     http://dist.plone.org/release/4.2.1/versions.cfg
 
 versions = versions
@@ -46,6 +47,7 @@ supervisor = 3.0a12
 \# Port configuration
 [ports]
 zope = ${http_port}
+zope2 = ${debug_instance_port}
 zeo = ${zeo_port}
 supervisor = ${supervisor_port}
 
@@ -87,7 +89,7 @@ environment-vars =
 \# Do not add zcml here
 \# for consistence-sake, please add them in the zcml
 \# option for buildout part. Thank you.
-zcml = 
+zcml =
     \${buildout:zcml}
 
 products =
@@ -97,17 +99,22 @@ products =
 recipe = plone.recipe.zeoserver
 zeo-address = \${ports:zeo}
 
+[instance2]
+<= instance
+debug-mode = on
+verbose-security = on
+http-address = \${ports:zope2}
 
 [supervisor]
 recipe = collective.recipe.supervisor
-port = \${ports:supervisor}     
+port = \${ports:supervisor}
 serverurl = http://127.0.0.1:\${ports:supervisor}
 plugins = superlance
 programs =
-   10 zeo\${buildout:projectname} \${buildout:directory}/bin/zeo [fg] true 
-   20 zope\${buildout:projectname}\${instance:http-address} \${buildout:directory}/bin/instance [console] true 
+   10 zeo\${buildout:projectname} \${buildout:directory}/bin/zeo [fg] true
+   20 zope\${buildout:projectname}\${instance:http-address} \${buildout:directory}/bin/instance [console] true
 
-eventlisteners = 
+eventlisteners =
    Memmon TICK_60 \${buildout:bin-directory}/memmon [-p zope\${buildout:projectname}\${instance:http-address}=700MB -m support@codesyntax.com]
    MailMe PROCESS_STATE_EXITED \${buildout:bin-directory}/crashmail [-p zope\${buildout:projectname}\${instance:http-address} -m support@codesyntax.com]
 
