@@ -20,15 +20,19 @@
       the portal_skins tool, so that they become usable as skin layers.
       -->
 #end if
- <object name="${namespace_package}_${package}_custom_images"
+ <object name="${namespace_package}_${package}_images"
     meta_type="Filesystem Directory View"
-    directory="${namespace_package}.${package}:skins/${namespace_package}_${package}_custom_images"/>
- <object name="${namespace_package}_${package}_custom_templates"
+    directory="${namespace_package}.${package}:skins/${namespace_package}_${package}_images"/>
+ <object name="${namespace_package}_${package}_templates"
     meta_type="Filesystem Directory View"
-    directory="${namespace_package}.${package}:skins/${namespace_package}_${package}_custom_templates"/>
+    directory="${namespace_package}.${package}:skins/${namespace_package}_${package}_templates"/>
  <object name="${namespace_package}_${package}_styles"
     meta_type="Filesystem Directory View"
     directory="${namespace_package}.${package}:skins/${namespace_package}_${package}_styles"/>
+ <object name="${namespace_package}_${package}_js"
+    meta_type="Filesystem Directory View"
+    directory="${namespace_package}.${package}:skins/${namespace_package}_${package}_js"/>
+
 
 #if str($include_doc) == 'True'
  <!-- A skin-path in this file corresponds to a Skin Selection in the
@@ -45,12 +49,14 @@
        -->
 #end if
  <skin-path name="$skinname" based-on="Sunburst Theme">
-  <layer name="${namespace_package}_${package}_custom_images"
+  <layer name="${namespace_package}_${package}_images"
      insert-after="custom"/>
-  <layer name="${namespace_package}_${package}_custom_templates"
-     insert-after="${namespace_package}_${package}_custom_images"/>
+  <layer name="${namespace_package}_${package}_templates"
+     insert-after="${namespace_package}_${package}_images"/>
   <layer name="${namespace_package}_${package}_styles"
-     insert-after="${namespace_package}_${package}_custom_templates"/>
+     insert-after="${namespace_package}_${package}_templates"/>
+  <layer name="${namespace_package}_${package}_js"
+     insert-after="${namespace_package}_${package}_styles"/>
  </skin-path>
 
 </object>
