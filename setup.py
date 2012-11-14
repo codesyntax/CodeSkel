@@ -36,6 +36,7 @@ setup(name='CodeSkel',
       cs_plone3_theme = codeskel:Plone3Theme
       cs_plone4_buildout = codeskel:Plone4Buildout
       csdexterity = codeskel:CSDexterity
+      cs_django_project = codeskel:CSDjangoProject
 
       [zopeskel.zopeskel_sub_template]
       cs_dexterity_content = codeskel:DexterityContentCS
