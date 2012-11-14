@@ -5,9 +5,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="$skinname"
+      title="${namespace_package}.${package}: $skinname"
       directory="profiles/default"
-      description='Extension profile for the "${skinname}" Plone theme.'
+      description="Theme for ${namespace_package}.${package}. Skin name: '${skinname}'"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
