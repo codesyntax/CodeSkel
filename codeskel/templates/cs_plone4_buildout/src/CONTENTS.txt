@@ -1,0 +1,1 @@
+Put here your develop-eggs and activate them using mr.developer
