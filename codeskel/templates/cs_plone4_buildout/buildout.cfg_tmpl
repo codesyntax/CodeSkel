@@ -49,7 +49,6 @@ supervisor = 3.0a12
 zope = ${http_port}
 zope2 = ${debug_instance_port}
 zeo = ${zeo_port}
-supervisor = ${supervisor_port}
 
 [checkinterval]
 recipe = cs.recipe.checkinterval
@@ -107,8 +106,8 @@ http-address = \${ports:zope2}
 
 [supervisor]
 recipe = collective.recipe.supervisor
-port = \${ports:supervisor}
-serverurl = http://127.0.0.1:\${ports:supervisor}
+http-socket = unix
+file = \${buildout:directory}/var/supervisord.sock
 plugins = superlance
 programs =
    10 zeo\${buildout:projectname} \${buildout:directory}/bin/zeo [fg] true
