@@ -2,10 +2,13 @@
 HISTORY
 =======
 
-1.8.11 (UNRELEASED)
+1.9 (2012/11/14)
 -----------------------
 
-- Added buildout
+- Added new template for quickstarting Django projects
+  [erral]
+
+- Added buildout for developing this package
   [erral]
 
 1.8.10 (2012/10/05)

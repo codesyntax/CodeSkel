@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.8.11'
+version = '1.9'
 
 setup(name='CodeSkel',
       version=version,
