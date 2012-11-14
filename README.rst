@@ -42,6 +42,13 @@ dexterity_cs
   A dexterity based package template based on the ZopeSkel provided one but some additions
   based on archeytype template from ZopeSkel
 
+cs_django_project
+  A Django project skeleton
+
+cs_django_buildout
+  A Django buildout skeleton, with gunicorn and supervisor configuration and also
+  with a project in src folder
+
 
 Local commands
 ---------------
