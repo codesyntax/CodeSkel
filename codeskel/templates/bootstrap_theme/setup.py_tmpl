@@ -26,7 +26,8 @@ setup(name=${repr($project)},
       install_requires=[
           'setuptools',
           'plonetheme.bootstrap',
-          'z3c.jbot'
+          'z3c.jbot',
+          'five.grok',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
