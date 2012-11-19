@@ -2,6 +2,11 @@
 HISTORY
 =======
 
+1.10.2 (UNRELEASED)
+--------------------
+
+- Change static and media path in settings.py_tmpl
+
 1.10.1 (2012/11/14)
 --------------------
 
