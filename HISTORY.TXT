@@ -6,6 +6,7 @@ HISTORY
 --------------------
 
 - Change static and media path in settings.py_tmpl
+- Add pytz to django based templates
 
 1.10.1 (2012/11/14)
 --------------------
