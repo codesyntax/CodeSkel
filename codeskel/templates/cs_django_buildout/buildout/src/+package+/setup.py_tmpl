@@ -24,6 +24,7 @@ setup(name=${repr($package)},
       zip_safe=False,
       install_requires=[
           'setuptools',
+	  'pytz',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
