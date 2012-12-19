@@ -54,8 +54,8 @@ USE_I18N = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = '/home/csmant/${package}/static'
-MEDIA_ROOT = '/home/csmant/${package}/media'
+STATIC_ROOT = '/home/csmant/django/${package}/static'
+MEDIA_ROOT = '/home/csmant/django/${package}/media'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -111,6 +111,11 @@ except:
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
+
+try:
+    from server_settings import *
+except:
+    pass
 
 try:
     from local_settings import *
