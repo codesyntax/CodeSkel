@@ -2,6 +2,9 @@
 HISTORY
 =======
 
+1.10.4 (UNRELEASED)
+---------------------
+
 1.10.3 (2013/1/20)
 --------------------
 - Fix wrong variable use [erral]
