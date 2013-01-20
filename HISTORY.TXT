@@ -4,7 +4,7 @@ HISTORY
 
 1.10.3 (UNRELEASED)
 --------------------
-
+- Fix wrong variable use [erral]
 
 1.10.2 (2012/12/19)
 --------------------

@@ -39,7 +39,7 @@ eggs =
     \${buildout:eggs}
     \${django:projectegg}
 extra-paths =
-    ${buildout:directory}/../conf
+    \${buildout:directory}/../conf
 
 [staticfiles]
 recipe = collective.recipe.cmd
