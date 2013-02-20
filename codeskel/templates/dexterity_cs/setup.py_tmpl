@@ -26,6 +26,7 @@ setup(name=${repr($project)},
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'five.grok'
           # -*- Extra requirements: -*-
       ],
       entry_points="""
