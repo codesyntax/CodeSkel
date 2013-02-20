@@ -98,7 +98,7 @@ HISTORY
 1.8.4 (2012/05/10)
 ------------------------
 
-- Set Sunburts Theme as base template directly in skins.xml file
+- Set Sunburst Theme as base template directly in skins.xml file
   [erral]
 
 1.8.3 (2012/05/09)
