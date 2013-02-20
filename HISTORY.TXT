@@ -5,7 +5,9 @@ HISTORY
 1.11 (UNRELEASED)
 ---------------------
 
-- Upgrade bootstrap.py files to zc.buildout >= 2.0
+- Upgrade bootstrap.py files to zc.buildout >= 2.0 [erral]
+
+- Grok theme packages by default [erral]
 
 1.10.3 (2013/1/20)
 --------------------
