@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.11 (UNRELEASED)
+1.11 (2013/2/20)
 ---------------------
 
 - Upgrade bootstrap.py files to zc.buildout >= 2.0 [erral]
