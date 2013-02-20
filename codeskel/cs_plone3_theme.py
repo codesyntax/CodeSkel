@@ -14,7 +14,7 @@ class Plone3Theme(ZSPlone3Theme):
     get_var(vars, 'version').default = '1.0'
     get_var(vars, 'version').modes = ()
 
-    get_var(vars, 'description').default = 'Installable theme: %s.%s' % (str(get_var(vars, 'namespace_package')), str(get_var(vars, 'package')))
+    get_var(vars, 'description').default = 'Installable theme'
     get_var(vars, 'description').modes = ()
 
     get_var(vars, 'empty_styles').default = True
