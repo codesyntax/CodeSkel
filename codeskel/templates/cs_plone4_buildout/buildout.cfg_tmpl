@@ -3,7 +3,8 @@ projectname = ${project}
 
 extensions =
     mr.developer
-    buildout.dumppickedversions
+
+show-picked-versions = true
 
 parts =
     checkinterval

@@ -9,7 +9,8 @@ find-links =
 
 extensions =
     mr.developer
-    buildout.dumppickedversions
+
+show-picked-versions = true
 
 \# Add here any other egg you want to depend on
 eggs =

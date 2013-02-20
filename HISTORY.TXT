@@ -2,8 +2,10 @@
 HISTORY
 =======
 
-1.10.4 (UNRELEASED)
+1.11 (UNRELEASED)
 ---------------------
+
+- Upgrade bootstrap.py files to zc.buildout >= 2.0
 
 1.10.3 (2013/1/20)
 --------------------
