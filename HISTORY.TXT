@@ -4,6 +4,8 @@ HISTORY
 1.11.1 (UNRELEASED)
 --------------------
 
+- Clean dexterity template: generate content-type names
+  based on the name, and not the full dotted name [erral]
 
 1.11 (2013/2/20)
 ---------------------
