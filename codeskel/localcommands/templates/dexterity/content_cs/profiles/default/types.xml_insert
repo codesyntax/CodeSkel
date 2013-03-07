@@ -1,1 +1,1 @@
-  <object name="${contenttype_dottedname}" meta_type="Dexterity FTI" />
+  <object name="${contenttype_classname}" meta_type="Dexterity FTI" />

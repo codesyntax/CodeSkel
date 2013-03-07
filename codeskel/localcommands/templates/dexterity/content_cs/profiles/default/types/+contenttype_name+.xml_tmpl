@@ -12,6 +12,7 @@
 #else
   <property name="icon_expr">string:\${portal_url}/document_icon.png</property>
 #end if
+  <property name="content_meta_type">${contenttype_classname}</property>
   <property name="factory">${contenttype_dottedname}</property>
   <property name="global_allow">${global_allow}</property>
   <property name="filter_content_types">False</property>
