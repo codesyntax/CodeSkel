@@ -11,20 +11,20 @@
   <includeDependencies package="." />
 
   <include file="permissions.zcml" />
-  <include package=".browser" />	
-  
+  <include package=".browser" />
+
   <!-- Grok the package to initialise schema interfaces and content classes -->
   <grok:grok package="." />
-  
+
   <i18n:registerTranslations directory="locales" />
 
   <!-- Register an extension profile to make the product installable
        in Plone -->
   <genericsetup:registerProfile
       name="default"
-      title="${description or None}"
+      title="${namespace_package}.${package}: Content-types"
       directory="profiles/default"
-      description="Extension profile for ${description or None}"
+      description="Content-types for ${namespace_package}.${package}. ${description or None}"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
