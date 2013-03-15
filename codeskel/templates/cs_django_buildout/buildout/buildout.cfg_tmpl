@@ -29,7 +29,8 @@ develop =
 versions = versions
 
 [versions]
-
+supervisor = 3.0b1
+collective.recipe.supervisor = 0.19
 
 [django]
 recipe = djangorecipe

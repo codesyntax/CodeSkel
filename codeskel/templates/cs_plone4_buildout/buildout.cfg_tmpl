@@ -43,7 +43,8 @@ zcml =
 develop =
 
 [versions]
-supervisor = 3.0a12
+supervisor = 3.0b1
+collective.recipe.supervisor = 0.19
 
 \# Port configuration
 [ports]
