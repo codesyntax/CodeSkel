@@ -1,7 +1,7 @@
 
 HISTORY
 =======
-1.11.1 (UNRELEASED)
+1.12 (2013/3/15)
 --------------------
 
 - Add information about making dexterity content-type multilingual [erral]
