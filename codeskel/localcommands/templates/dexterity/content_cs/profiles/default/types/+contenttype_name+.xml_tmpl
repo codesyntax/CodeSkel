@@ -26,6 +26,11 @@
   <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
      <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
+     <!--
+      Install plone.app.multilingual and plone.multilingualbehavior and
+      uncomment this to make your content-type multilingual
+      <element value="plone.multilingualbehavior.interfaces.IDexterityTranslatable" />
+     -->
    </property>
 
   <!-- View information -->

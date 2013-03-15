@@ -4,6 +4,8 @@ HISTORY
 1.11.1 (UNRELEASED)
 --------------------
 
+- Add information about making dexterity content-type multilingual [erral]
+
 - Pin supervisor and collective.recipe.supervisor to a KGS [erral]
 
 - Set (autorestart=true) in zope and zeo instances in supervisor [erral]
