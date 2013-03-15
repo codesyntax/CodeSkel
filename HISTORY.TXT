@@ -4,6 +4,8 @@ HISTORY
 1.11.1 (UNRELEASED)
 --------------------
 
+- Upgrade Plone buildout to the latest 4.2.5 version [erral]
+
 - Clean dexterity template: generate content-type names
   based on the name, and not the full dotted name [erral]
 
