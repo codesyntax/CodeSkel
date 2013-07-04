@@ -18,21 +18,25 @@ parts =
 \# index = http://b.pypi.python.org
 \# Change the number here to change the version of Plone being used
 extends =
-    http://dist.plone.org/release/4.2.5/versions.cfg
+    http://dist.plone.org/release/4.3.1/versions.cfg
 
 versions = versions
 
 \# Add additional egg download sources here. dist.plone.org contains archives
 \# of Plone packages.
 find-links =
-    http://dist.plone.org/release/4.2.5
+    http://dist.plone.org/release/4.3.1
     http://dist.plone.org/thirdparty
     http://www.codesyntax.com/en/products/simple
 
 \# Add additional eggs needed for your project here
 eggs =
     Pillow
-
+    plone.app.contenttypes
+    \# Multilingual support for dexterity
+    \# plone.app.multilingual
+    \# plone.multilingualbehavior
+    \# plone.app.dexterity [grok, relations]
 
 \# Add here which products' zcml files will be loaded
 zcml =

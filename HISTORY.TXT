@@ -5,6 +5,8 @@ HISTORY
 1.12.1 (UNRELEASED)
 ----------------------
 
+- New defaults: Plone 4.3.1 with p.a.contenttypes [erral]
+
 - Set dexterity as required for content-types [erral]
 
 - Add more interfaces for generated dexterity types [erral]
