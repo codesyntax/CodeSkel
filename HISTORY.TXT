@@ -2,10 +2,12 @@
 HISTORY
 =======
 
-1.12.1 (UNRELEASED)
+1.13 (UNRELEASED)
 ----------------------
 
-- Remove custom meta type. 
+- Add namedfile dependency in setup.py [erral]
+
+- Remove custom meta type.
   Refs: http://code.google.com/p/dexterity/issues/detail?id=285 [erral]
 
 - New defaults: Plone 4.3.1 with p.a.contenttypes [erral]
