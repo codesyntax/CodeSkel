@@ -5,6 +5,8 @@ HISTORY
 1.12.1 (UNRELEASED)
 ----------------------
 
+- Set dexterity as required for content-types [erral]
+
 - Add more interfaces for generated dexterity types [erral]
 
 1.12 (2013/3/15)
