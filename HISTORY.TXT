@@ -5,6 +5,8 @@ HISTORY
 1.13 (UNRELEASED)
 ----------------------
 
+- Remove useless static directory in dexterity template [erral]
+
 - Add namedfile dependency in setup.py to dexterity template [erral]
 
 - Remove custom meta type in dexterity template.
