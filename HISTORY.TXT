@@ -5,6 +5,9 @@ HISTORY
 1.13 (UNRELEASED)
 ----------------------
 
+- Add diff tool configurationfile to the profile in the dexterity
+  template [erral]
+
 - Remove useless static directory in dexterity template [erral]
 
 - Add namedfile dependency in setup.py to dexterity template [erral]

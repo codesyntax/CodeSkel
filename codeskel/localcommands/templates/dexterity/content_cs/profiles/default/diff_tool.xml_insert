@@ -1,0 +1,14 @@
+#<?xml version="1.0"?>
+#<!-- This files registers content-types into the portal_diff tool
+#     in order to use versioning tool's diff tool
+#  -->
+#<object>
+# <difftypes>
+#  <!-- -*- extra stuff goes here -*- -->
+
+  <type portal_type="${contenttype_classname}">
+   <field name="any" difftype="Compound Diff for Dexterity types"/>
+  </type>
+
+#</difftypes>
+#</object>
