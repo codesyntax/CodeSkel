@@ -33,10 +33,10 @@ find-links =
 eggs =
     Pillow
     plone.app.contenttypes
-    \# Multilingual support for dexterity
-    \# plone.app.multilingual
-    \# plone.multilingualbehavior
-    \# plone.app.dexterity [grok, relations]
+\# Multilingual support for dexterity
+\# plone.app.multilingual
+\# plone.multilingualbehavior
+\# plone.app.dexterity [grok, relations]
 
 \# Add here which products' zcml files will be loaded
 zcml =
