@@ -24,13 +24,18 @@
   <property name="klass">${package_dotted_name}.${content_class_filename}.${contenttype_classname}</property>
 
   <property name="behaviors">
-     <element value="plone.app.content.interfaces.INameFromTitle" />
-     <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
-     <!--
-      Install plone.app.multilingual and plone.multilingualbehavior and
-      uncomment this to make your content-type multilingual
-      <element value="plone.multilingualbehavior.interfaces.IDexterityTranslatable" />
-     -->
+    <element value="plone.app.content.interfaces.INameFromTitle" />
+    <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
+    <element value="plone.app.dexterity.behaviors.discussion.IAllowDiscussion"/>
+    <element
+       value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
+    <element value="Products.CMFPlone.interfaces.constrains.ISelectableConstrainTypes"/>
+    <element value="plone.app.referenceablebehavior.referenceable.IReferenceable"/>
+    <element value="plone.app.relationfield.behavior.IRelatedItems"/>
+    <element value="plone.app.versioningbehavior.behaviors.IVersionable" />
+    <element value="plone.app.contenttypes.behaviors.tableofcontents.ITableOfContents"/>
+    <element value="plone.app.dexterity.behaviors.nextprevious.INextPreviousToggle"/>
+    <element value="plone.multilingualbehavior.interfaces.IDexterityTranslatable" /> 
    </property>
 
   <!-- View information -->
