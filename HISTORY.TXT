@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.13 (UNRELEASED)
+1.13 (2013-7-5)
 ----------------------
 
 - Add diff tool configurationfile to the profile in the dexterity
@@ -21,7 +21,7 @@ HISTORY
 
 - Add more interfaces for generated dexterity types [erral]
 
-1.12 (2013/3/15)
+1.12 (2013-3-15)
 --------------------
 
 - Add information about making dexterity content-type multilingual [erral]
@@ -37,32 +37,32 @@ HISTORY
 - Clean dexterity template: generate content-type names
   based on the name, and not the full dotted name [erral]
 
-1.11 (2013/2/20)
+1.11 (2013-2-20)
 ---------------------
 
 - Upgrade bootstrap.py files to zc.buildout >= 2.0 [erral]
 
 - Grok theme packages by default [erral]
 
-1.10.3 (2013/1/20)
+1.10.3 (2013-1-20)
 --------------------
 - Fix wrong variable use [erral]
 
-1.10.2 (2012/12/19)
+1.10.2 (2012-12-19)
 --------------------
 
 - Change static and media path in settings.py_tmpl
 - Add pytz to django based templates
 - Add staticfiles stuff on urls.py
 
-1.10.1 (2012/11/14)
+1.10.1 (2012-11-14)
 --------------------
 
 - Brown bag release, src directory was ignored by gitignore and thus
   missing from the release
   [erral]
 
-1.10 (2012/11/14)
+1.10 (2012-11-14)
 --------------------
 
 - New django buildout template
@@ -72,7 +72,7 @@ HISTORY
   [erral]
 
 
-1.9 (2012/11/14)
+1.9 (2012-11-14)
 -----------------------
 
 - Added new template for quickstarting Django projects
@@ -81,7 +81,7 @@ HISTORY
 - Added buildout for developing this package
   [erral]
 
-1.8.10 (2012/10/05)
+1.8.10 (2012-10-05)
 ---------------------
 
 - Added a new template based on Twitter Bootstrap Theme
@@ -91,7 +91,7 @@ HISTORY
 - Buildout can't handle urls with buildout parameters
   [erral]
 
-1.8.9 (2012/10/05)
+1.8.9 (2012-10-05)
 ---------------------
 
 - Add Plone version in a parameter
@@ -100,7 +100,7 @@ HISTORY
 - Fix syntax error.
   [erral]
 
-1.8.8 (2012/10/05)
+1.8.8 (2012-10-05)
 --------------------
 
 - Add checkinterval calculation part to buildout recipe
@@ -109,13 +109,13 @@ HISTORY
 - Deactivate mobile.css from cs_plone3_theme
   [erral]
 
-1.8.7 (2012/05/19)
+1.8.7 (2012-05-19)
 ---------------------
 
 - Change project's url
   [erral]
 
-1.8.6 (2012/05/19)
+1.8.6 (2012-05-19)
 -----------------------
 - Remove 'media' in CSS
   [erral]
@@ -126,19 +126,19 @@ HISTORY
 - Add missing sources section in buildout-template
   [erral]
 
-1.8.5 (2012/05/11)
+1.8.5 (2012-05-11)
 ---------------------
 
 - Fix dependencies
   [erral]
 
-1.8.4 (2012/05/10)
+1.8.4 (2012-05-10)
 ------------------------
 
 - Set Sunburst Theme as base template directly in skins.xml file
   [erral]
 
-1.8.3 (2012/05/09)
+1.8.3 (2012-05-09)
 --------------------
 
 - Add Sunburst Theme as default for cs_plone3_themes
@@ -148,14 +148,14 @@ HISTORY
   [erral]
 
 
-1.8.2 (2012/05/03)
+1.8.2 (2012-05-03)
 -------------------
 
 - Fix documentation
   [erral]
 
 
-1.8.1 (2012/05/03)
+1.8.1 (2012-05-03)
 --------------------
 - Fix ZopeSkel dependency to <= 2.99
   [erral]
