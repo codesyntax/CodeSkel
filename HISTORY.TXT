@@ -2,6 +2,12 @@
 HISTORY
 =======
 
+1.14 (UNRELEASED)
+------------------
+
+- Fix theme template to be compatible with latest Sunburst [erral]
+
+
 1.13 (2013-7-5)
 ----------------------
 
