@@ -58,7 +58,7 @@ meld3 = 0.6.10
 
 \# Calculate Zope's checkinterval
 cs.recipe.checkinterval = 1.0
-jarn.checkinterval = 1.1
+jarn.checkinterval = 1.0
 
 \# Custom egg versions
 cs.folderishpage = 1.0
