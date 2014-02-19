@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.14 (UNRELEASED)
+1.14 (2014-02-19)
 ------------------
 
 - Pin some more eggs in Plone buildout [erral]
