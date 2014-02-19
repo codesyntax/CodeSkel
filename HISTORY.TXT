@@ -5,6 +5,10 @@ HISTORY
 1.14 (UNRELEASED)
 ------------------
 
+- Pin some more eggs in Plone buildout [erral]
+
+- Upgrade Plone buildout to use Plone 4.3.2 [erral]
+
 - Fix diff_tool.xml file syntax [erral]
 
 - Fix theme template to be compatible with latest Sunburst [erral]
