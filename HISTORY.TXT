@@ -5,7 +5,10 @@ HISTORY
 1.14 (UNRELEASED)
 ------------------
 
+- Fix diff_tool.xml file syntax [erral]
+
 - Fix theme template to be compatible with latest Sunburst [erral]
+
 
 
 1.13 (2013-7-5)
