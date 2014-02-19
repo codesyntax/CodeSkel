@@ -5,7 +5,7 @@ HISTORY
 1.14.1 (2014-02-19)
 ---------------------
 
-- Pin setuptools & zc.buildout [erral]
+- Pin setuptools & zc.buildout in Plone template [erral]
 
 1.14 (2014-02-19)
 ------------------
