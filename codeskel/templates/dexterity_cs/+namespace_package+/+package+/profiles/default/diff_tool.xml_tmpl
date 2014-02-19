@@ -2,6 +2,8 @@
 <!-- This files registers content-types into the portal_diff tool
      in order to use versioning tool's diff tool
   -->
-<object name="portal_types" meta_type="Plone Types Tool">
-  <!-- -*- extra stuff goes here -*- -->
+<object>
+    <difftypes>
+    <!-- -*- extra stuff goes here -*- -->
+    </difftypes>
 </object>
