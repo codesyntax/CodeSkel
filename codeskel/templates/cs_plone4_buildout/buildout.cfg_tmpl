@@ -31,10 +31,10 @@ eggs =
     Pillow
     plone.app.contenttypes
     cs.folderishpage
+    plone.app.dexterity [grok, relations]
 \# Multilingual support for dexterity
 \# plone.app.multilingual
 \# plone.multilingualbehavior
-\# plone.app.dexterity [grok, relations]
 
 \# Add here which products' zcml files will be loaded
 zcml =
