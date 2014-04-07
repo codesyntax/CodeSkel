@@ -1,11 +1,14 @@
 [buildout]
 parts =
+    facts
     haproxy-build
     haproxy-conf
 
 [ports]
 haproxy = ${haproxy_port}
 
+[facts]
+recipe = isotoma.recipe.facts
 
 [haproxy-build]
 recipe = plone.recipe.haproxy
