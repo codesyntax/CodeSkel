@@ -1,0 +1,26 @@
+[buildout]
+parts =
+    varnish-build
+    varnish
+
+[ports]
+varnish = ${varnish_port}
+
+
+[varnish-build]
+recipe = zc.recipe.cmmi
+url = \${varnish:download-url}
+
+
+[varnish]
+recipe = plone.recipe.varnish
+daemon = \${buildout:parts-directory}/varnish-build/sbin/varnishd
+bind = 127.0.0.1:\${ports:varnish}
+\# UNCOMMENT THE SELECTED OPTION: directly to Zope or to HAProxy
+\# If you choose HAProxy, you also need to check HAProxy configuration.
+\# e.g.: extend from haproxy.cfg and enable parts in your buildout.cfg
+\# When redirecting traffic directly to Zope
+backends = 127.0.0.1:${http_port}
+\# When redirecting traffic directly to HAProxy
+\#backends = 127.0.0.1:${haproxy_port}
+cache-size = 256M

@@ -16,8 +16,10 @@ class Plone4Buildout(BaseTemplate):
 
     def pre(self, command, output_dir, vars):
         super(BaseTemplate, self).pre(command, output_dir, vars)
-        vars['zeo_port'] = int(vars['http_port']) + 1
+        vars['zeo_port'] = int(vars['http_port']) + 10
         vars['debug_instance_port'] = int(vars['zeo_port']) + 1
+        vars['haproxy_port'] = int(vars['http_port']) + 20
+        vars['varnish_port'] = int(vars['http_port']) + 30
 
     def post(self, command, output_dir, vars):
         print "-----------------------------------------------------------"
