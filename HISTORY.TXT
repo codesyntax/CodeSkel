@@ -2,8 +2,8 @@
 HISTORY
 =======
 
-1.15 (UNRELEASED)
---------------------
+2.0 (2015-02-03)
+----------------
 
 - Create configfiles to configure varnish and haproxy [erral]
 
