@@ -1,6 +1,7 @@
 from codeskel.base import BaseTemplate
 from codeskel.base import var
 
+
 class Plone4Buildout(BaseTemplate):
     _template_dir = 'templates/cs_plone4_buildout'
     summary = "A buildout for Plone 4 projects"
@@ -12,12 +13,15 @@ class Plone4Buildout(BaseTemplate):
         var('http_port',
             'HTTP port',
             default=8080),
-        ]
+    ]
 
     def pre(self, command, output_dir, vars):
         super(BaseTemplate, self).pre(command, output_dir, vars)
         vars['zeo_port'] = int(vars['http_port']) + 10
-        vars['debug_instance_port'] = int(vars['zeo_port']) + 1
+        vars['instance2_port'] = int(vars['http_port']) + 1
+        vars['instance3_port'] = int(vars['http_port']) + 3
+        vars['instance4_port'] = int(vars['http_port']) + 4
+        vars['instance5_port'] = int(vars['http_port']) + 5
         vars['haproxy_port'] = int(vars['http_port']) + 20
         vars['varnish_port'] = int(vars['http_port']) + 30
 

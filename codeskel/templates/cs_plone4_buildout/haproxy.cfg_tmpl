@@ -1,5 +1,5 @@
 [buildout]
-parts =
+parts +=
     facts
     haproxy-build
     haproxy-conf
@@ -13,7 +13,7 @@ recipe = isotoma.recipe.facts
 [haproxy-build]
 recipe = plone.recipe.haproxy
 target = generic
-url = http://haproxy.1wt.eu/download/1.4/src/haproxy-1.4.24.tar.gz
+url = http://www.haproxy.org/download/1.4/src/haproxy-1.4.26.tar.gz
 
 [haproxy-conf]
 recipe = collective.recipe.template[genshi]
