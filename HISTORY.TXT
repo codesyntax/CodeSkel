@@ -5,6 +5,10 @@ HISTORY
 1.15 (UNRELEASED)
 --------------------
 
+- Create configfiles to configure varnish and haproxy [erral]
+
+- Create webserver configuration for Apache and Nginx [erral]
+
 - Install dexterity always in plone buildout [erral]
 
 - Document versions part [erral]
