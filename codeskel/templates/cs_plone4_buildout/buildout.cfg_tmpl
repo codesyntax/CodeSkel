@@ -6,7 +6,7 @@ extensions =
 
 show-picked-versions = true
 
-parts =
+parts +=
     checkinterval
     instance
     instance2
@@ -20,7 +20,7 @@ parts =
 \# Change the number here to change the version of Plone being used
 extends =
     https://dist.plone.org/release/4.3.4/versions.cfg
-\# webserver.cfg
+    webserver.cfg
 
 
 versions = versions
@@ -43,11 +43,6 @@ eggs =
 
 \# Add here which products' zcml files will be loaded
 zcml =
-
-
-\# Reference any eggs you are developing here, one per line
-\# e.g.: develop = src/my.package
-develop =
 
 [versions]
 \# Supervisor versions
@@ -90,7 +85,7 @@ ssl-certificate-path = \# Set here the absolute path to the SSL certificate file
 ssl-private-key-path = \# Set here the absolute path to the Private key file
 ssl-certificate-chain-path = \# ONLY NEEDED BY APACHE: Set here the absolute path to the SSL certificate chain file
 ssl-ca-certificate-path = \# ONLY NEEDED BY APACHE: Set here the absolute path to the CA SSL certificate
-\# Common defaults, only change if you want to store the files somewhere else
+\# Standard defaults, only change if you want to store the files somewhere else
 apache-log-path = /var/log/apache2
 nginx-log-path = /var/log/nginx
 \# Only used in the complex setup where all logged-in traffic
@@ -173,8 +168,8 @@ programs =
 \#   22 zope\${buildout:projectname}\${instance3:http-address} (autorestart=true) \${buildout:directory}/bin/instance3 [console] true
 \#   23 zope\${buildout:projectname}\${instance4:http-address} (autorestart=true) \${buildout:directory}/bin/instance4 [console] true
 \#   24 zope\${buildout:projectname}\${instance5:http-address} (autorestart=true) \${buildout:directory}/bin/instance5 [console] true
-\#   30 haproxy\${buildout:projectname}\${ports:haproxy} ${buildout:directory}/bin/haproxy [ -f ${buildout:directory}/etc/haproxy.conf -db ]
-\#   40 varnish\${buildout:projectname}\${ports:varnish} ${varnish:daemon} [ -f ${varnish:config} -n ${buildout:directory}/var -s malloc,1G -a ${varnish:bind} -F ]
+\#   30 haproxy\${buildout:projectname}\${ports:haproxy} \${buildout:directory}/bin/haproxy [ -f \${buildout:directory}/etc/haproxy.conf -db ]
+\#   40 varnish\${buildout:projectname}\${ports:varnish} \${varnish:daemon} [ -f \${varnish:config} -n \${buildout:directory}/var -s malloc,1G -a \${varnish:bind} -F ]
 
 
 eventlisteners =

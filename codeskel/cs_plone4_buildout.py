@@ -19,17 +19,24 @@ class Plone4Buildout(BaseTemplate):
         super(BaseTemplate, self).pre(command, output_dir, vars)
         vars['zeo_port'] = int(vars['http_port']) + 10
         vars['instance2_port'] = int(vars['http_port']) + 1
-        vars['instance3_port'] = int(vars['http_port']) + 3
-        vars['instance4_port'] = int(vars['http_port']) + 4
-        vars['instance5_port'] = int(vars['http_port']) + 5
+        vars['instance3_port'] = int(vars['http_port']) + 2
+        vars['instance4_port'] = int(vars['http_port']) + 3
+        vars['instance5_port'] = int(vars['http_port']) + 4
         vars['haproxy_port'] = int(vars['http_port']) + 20
         vars['varnish_port'] = int(vars['http_port']) + 30
 
     def post(self, command, output_dir, vars):
         print "-----------------------------------------------------------"
-        print "Generation finished"
-        print "You probably want to run python bootstrap.py and then edit"
-        print "buildout.cfg before running bin/buildout -v"
+        print " Generation finished"
         print
-        print "See README.txt for details"
+        print " See README.txt for details"
         print "-----------------------------------------------------------"
+        print ""
+        print "              NEXT STEPS "
+        print "-----------------------------------------------------------"
+        print "              $ cd " + output_dir
+        print "              $ ~/buildout.python/bin/virtualenv-2.7 ."
+        print "              $ ./bin/pip install --upgrade setuptools"
+        print "              $ ./bin/python2.7 bootstrap.py"
+        print "              $ ./bin/buildout -vv"
+        print ""

@@ -15,31 +15,31 @@ verbose-security = off
 
 
 \# Port configuration
+\# Default values will be taken from buildout.cfg, override here as appropiate
 [ports]
-instance = ${http_port}
-instance2 = ${instance2_port}
-instance3 = ${instance3_port}
-instance4 = ${instance4_port}
-instance5 = ${instance5_port}
-zeo = ${zeo_port}
-haproxy = ${haproxy_port}
-varnish = ${varnish_port}
+\# instance =
+\# instance2 =
+\# instance3 =
+\# instance4 =
+\# instance5 =
+\# zeo =
+\# haproxy =
+\# varnish =
 
 
-\# Webserver configuration. It will be used to generate apache and nginx configuration
-\# To use them, symlink the appropiate file to your webserver configuration directory
+\# Default values will be taken from buildout.cfg, override here as appropiate
 [configuration]
-server-name = \# Set here the primary domain name to this instance
-additional-names = \# Set here the secondary domain names to this instance that will be redirect to the primary one
+\# server-name =
+\# additional-names =
 \# Only used to create SSL configuration
-ssl-certificate-path = \# Set here the absolute path to the SSL certificate file
-ssl-private-key-path = \# Set here the absolute path to the Private key file
-ssl-certificate-chain-path = \# ONLY NEEDED BY APACHE: Set here the absolute path to the SSL certificate chain file
-ssl-ca-certificate-path = \# ONLY NEEDED BY APACHE: Set here the absolute path to the CA SSL certificate
-\# Common defaults, only change if you want to store the files somewhere else
-apache-log-path = /var/log/apache2
-nginx-log-path = /var/log/nginx
+\# ssl-certificate-path =
+\# ssl-private-key-path =
+\# ssl-certificate-chain-path =
+\# ssl-ca-certificate-path =
+\# Standard defaults, only change if you want to store the files somewhere else
+\# apache-log-path =
+\# nginx-log-path =
 \# Only used in the complex setup where all logged-in traffic
 \# is directed to a given Zope instance
-edit-server-name = \# Set the domain name to be used by logged-in users.
-zope-edit-port = \# Set the port-number of the instance used to edit.
+\# edit-server-name =
+\# zope-edit-port =

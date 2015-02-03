@@ -1,30 +1,30 @@
-\# Reference SSL: https://mozilla.github.io/server-side-tls/ssl-config-generator/
+# Reference SSL: https://mozilla.github.io/server-side-tls/ssl-config-generator/
 
-upstream \${buildout:projectname}plone {
+upstream ${buildout:projectname}plone {
     server 127.0.0.1:${ports:instance};
 }
 
-upstream \${buildout:projectname}varnish {
+upstream ${buildout:projectname}varnish {
     server 127.0.0.1:${ports:varnish};
 }
 
-upstream \${buildout:projectname}haproxy {
+upstream ${buildout:projectname}haproxy {
     server 127.0.0.1:${ports:haproxy};
 }
 
 server {
     listen 443 ssl spdy;
 
-    \# certs sent to the client in SERVER HELLO are concatenated in ssl_certificate
-    ssl_certificate \${configuration:ssl-certificate-path};
-    ssl_certificate_key \${configuration:ssl-private-key-path};
+    # certs sent to the client in SERVER HELLO are concatenated in ssl_certificate
+    ssl_certificate ${configuration:ssl-certificate-path};
+    ssl_certificate_key ${configuration:ssl-private-key-path};
     ssl_session_timeout 5m;
     ssl_session_cache shared:SSL:50m;
 
-    \# Diffie-Hellman parameter for DHE ciphersuites, recommended 2048 bits
-    \# Generate this file running as root the following command:
-    \#  $ mkdir -p /etc/nginx/ssl
-    \#  $ openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
+    # Diffie-Hellman parameter for DHE ciphersuites, recommended 2048 bits
+    # Generate this file running as root the following command:
+    #  $ mkdir -p /etc/nginx/ssl
+    #  $ openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
     ssl_dhparam /etc/nginx/ssl/dhparam.pem;
 
     # modern configuration. tweak to your needs.
@@ -37,9 +37,9 @@ server {
 
     resolver 8.8.8.8;
 
-    server_name \${configuration:server-name} \${configuration:additional-names};
-    access_log \${configuration:nginx-log-path}/\${configuration:server-name}.log;
-    error_log  \${configuration:nginx-log-path}/\${configuration:server-name}.log;
+    server_name ${configuration:server-name} ${configuration:additional-names};
+    access_log ${configuration:nginx-log-path}/${configuration:server-name}.log;
+    error_log  ${configuration:nginx-log-path}/${configuration:server-name}.log;
 
     gzip            on;
     gzip_min_length 1000;
@@ -47,22 +47,22 @@ server {
 
     location / {
         rewrite ^/(.*)$ /VirtualHostBase/https/${configuration:server-name}:443/Plone/VirtualHostRoot/$1 break;
-        \# Directly Zope
-        proxy_pass http://\${buildout:projectname}plone;
-        \# Varnish
-        \#proxy_pass http://\${buildout:projectname}varnish;
-        \# HAProxy
-        \#proxy_pass http://\${buildout:projectname}haproxy;
+        # Directly Zope
+        proxy_pass http://${buildout:projectname}plone;
+        # Varnish
+        # proxy_pass http://${buildout:projectname}varnish;
+        # HAProxy
+        # proxy_pass http://${buildout:projectname}haproxy;
     }
 }
 
 server {
 
-       listen 80;
-       server_name \${configuration:server-name} \${configuration:additional-names};
+   listen 80;
+   server_name ${configuration:server-name} ${configuration:additional-names};
 
-       location / {
-            rewrite ^/(.*)$ https://\${configuration:server-name} break;
+   location / {
+        rewrite ^/(.*)$ https://${configuration:server-name} break;
 
-       }
+   }
 }

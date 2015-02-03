@@ -28,6 +28,10 @@ Create a virtualenv in this directory::
 
   $ /path/to/virtualenv-2.7 .
 
+Upgrade setuptools::
+
+  $ ./bin/pip install --upgrade setuptools
+
 Bootstrap the buildout::
 
   $ ./bin/python2.7 bootstrap.py

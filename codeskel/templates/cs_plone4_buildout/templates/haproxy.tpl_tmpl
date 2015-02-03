@@ -62,7 +62,7 @@ backend zope
   # "maxconn" is how many connections can be sent to the server at once
   # "check" enables health checks
   # "rise 1" means consider Zope up after 1 successful health check
-  {% with items=[0,1,2,3]; port=${http_port} %}
+  {% with items=[0,1,2,3,4]; port=${http_port} %}
     {% for item in items %}
       {% with num=port+item %}
     server  instance\$item 127.0.0.1:\$num cookie p010\$item check maxconn 2 rise 1
