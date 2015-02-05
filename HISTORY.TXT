@@ -2,10 +2,11 @@
 HISTORY
 =======
 
-2.1 (unreleased)
+2.1 (2015-02-05)
 ----------------
 
-- Nothing changed yet.
+- inherit the ithemespecific browser layer interface from plonetheme.bootstrap [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 2.0 (2015-02-03)
