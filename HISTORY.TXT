@@ -2,10 +2,11 @@
 HISTORY
 =======
 
-2.2 (unreleased)
-----------------
+2.1.1 (2015-02-09)
+------------------
 
-- Nothing changed yet.
+- adjust default TLS configuration for nginx and add specific profile for spdy configuration [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 2.1 (2015-02-05)
