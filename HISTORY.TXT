@@ -2,10 +2,11 @@
 HISTORY
 =======
 
-2.1.2 (unreleased)
-------------------
+2.2 (2015-06-11)
+----------------
 
-- Nothing changed yet.
+- remove bootstrap.py and pin setuptools and zc.buildout to null. Recommend using non-bootstrapping pattern https://community.plone.org/t/not-using-bootstrap-py-as-default/620 [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 2.1.1 (2015-02-09)
