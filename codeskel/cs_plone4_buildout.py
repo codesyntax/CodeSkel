@@ -36,7 +36,6 @@ class Plone4Buildout(BaseTemplate):
         print "-----------------------------------------------------------"
         print "              $ cd " + output_dir
         print "              $ ~/buildout.python/bin/virtualenv-2.7 ."
-        print "              $ ./bin/pip install --upgrade setuptools"
-        print "              $ ./bin/python2.7 bootstrap.py"
+        print "              $ ./bin/pip install zc.buildout"
         print "              $ ./bin/buildout -vv"
         print ""

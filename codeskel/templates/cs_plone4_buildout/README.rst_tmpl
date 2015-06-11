@@ -28,13 +28,9 @@ Create a virtualenv in this directory::
 
   $ /path/to/virtualenv-2.7 .
 
-Upgrade setuptools::
+Install buildout::
 
-  $ ./bin/pip install --upgrade setuptools
-
-Bootstrap the buildout::
-
-  $ ./bin/python2.7 bootstrap.py
+  $ ./bin/pip install zc.buildout
 
 Run the buildout::
 
@@ -97,7 +93,7 @@ the files varnish.cfg and haproxy.cfg
 
 
 
-.. _sources: https://www.python.org/download/releases/2.7.6
+.. _sources: https://www.python.org/downloads/
 .. _python_buildout: https://github.com/collective/buildout.python
 .. _virtualenv: https://pypi.python.org/pypi/virtualenv
 .. _`virtualenv installation guidelines`: http://www.virtualenv.org/en/latest/virtualenv.html#installation
