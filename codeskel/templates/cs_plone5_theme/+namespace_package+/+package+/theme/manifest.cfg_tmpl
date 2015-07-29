@@ -1,0 +1,6 @@
+[theme]
+title = $project
+description = A diazo theme
+
+enabled-bundles = $project plone
+

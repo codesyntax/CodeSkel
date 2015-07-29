@@ -1,4 +1,4 @@
 <theme>
-  <name>{{{ package.dottedname }}}</name>
+  <name>$project</name>
   <enabled>true</enabled>
 </theme>

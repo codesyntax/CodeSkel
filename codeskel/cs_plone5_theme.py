@@ -26,7 +26,7 @@ class Plone5Theme(ZSPlone3Theme):
     get_var(vars, 'skinname').default = '(CHANGE THIS) Custom Theme'
 
     def pre(self, command, output_dir, vars):
-        super(Plone3Theme, self).pre(command, output_dir, vars)
+        super(Plone5Theme, self).pre(command, output_dir, vars)
         vars['description'] = 'Installable theme: %s.%s' % (vars['namespace_package'], vars['package'])
 
     def post(self, command, output_dir, vars):
