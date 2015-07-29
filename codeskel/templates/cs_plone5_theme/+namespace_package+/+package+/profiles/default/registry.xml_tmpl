@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<registry>
+
+  <!-- create a resource definition -->
+  <records prefix="plone.resources/$project"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+     <value key="css">
+        <element>++plone++$project/less/$project.less</element>
+     </value>
+  </records>
+
+  <!-- create a bundle definition -->
+  <records prefix="plone.bundles/$project"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>$project</element>
+    </value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++$project/bundle.min.js</value>
+    <value key="csscompilation">++plone++$project/bundle.css</value>
+    <value key="last_compilation">2015-05-28 00:00:00</value>
+  </records>
+
+</registry>

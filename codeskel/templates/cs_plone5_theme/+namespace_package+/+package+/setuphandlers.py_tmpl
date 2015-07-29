@@ -1,0 +1,16 @@
+
+
+def post_install(context):
+    """Post install script"""
+    if context.readDataFile('${namespace_package}.${package}_various.txt') is None:
+        return
+    # Do something during the installation of this package
+
+
+
+def uninstall(context):
+    """Uninstall script"""
+    if context.readDataFile('${namespace_package}.${package}_uninstall.txt') is None:
+        return
+    # Do something during the uninstallation of this package
+

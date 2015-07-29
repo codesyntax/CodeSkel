@@ -1,0 +1,37 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="${namespace_package}.${package}">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="${namespace_package}.${package}: $skinname"
+      directory="profiles/default"
+      description="Theme for ${namespace_package}.${package}. Skin name: '${skinname}'"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="${namespace_package}.${package}-postInstall"
+      title="${namespace_package}.${package} post_install import step"
+      description="Post install import step from ${namespace_package}.${package}"
+      handler=".setuphandlers.post_install">
+  </genericsetup:importStep>
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="${namespace_package}.${package}"
+      directory="profiles/uninstall"
+      description="Uninstalls the ${namespace_package}.${package} add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="${namespace_package}.${package}-uninstall"
+      title="${namespace_package}.${package} uninstall import step"
+      description="Import step run during ininstalling ${namespace_package}.${package}"
+      handler=".setuphandlers.uninstall">
+  </genericsetup:importStep>
+
+
+</configure>
