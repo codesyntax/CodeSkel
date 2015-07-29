@@ -2,7 +2,7 @@
 <registry>
 
   <!-- create a resource definition -->
-  <records prefix="plone.resources/$project"
+  <records prefix="plone.resources/${project}-resources"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
      <value key="css">
         <element>++plone++${project}/less/${project}.less</element>
@@ -10,10 +10,10 @@
   </records>
 
   <!-- create a bundle definition -->
-  <records prefix="plone.bundles/$project"
+  <records prefix="plone.bundles/${project}-bundle"
             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
     <value key="resources">
-      <element>$project</element>
+      <element>${project}-resources</element>
     </value>
     <value key="enabled">True</value>
     <value key="jscompilation">++plone++$project/bundle.min.js</value>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <layers>
   <layer
-      name="$project"
+      name="${project}"
       remove="true"
       />
 </layers>
