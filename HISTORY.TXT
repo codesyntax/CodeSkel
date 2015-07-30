@@ -2,10 +2,43 @@
 HISTORY
 =======
 
-2.3 (unreleased)
+3.0 (2015-07-30)
 ----------------
 
-- Nothing changed yet.
+- document plone5 theme [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- remove README.txt [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- readme [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- whitespace [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- show warning about setting development mode [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- adjust templates [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- fix registered resource's path [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- fix import [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- indentation [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- remove unused ignore file [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- create also files with a leading . [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- include basic Diazo theme based on Barceloneta for editors and front-end [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- rename [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- adjust theme [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- adjust theme [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- initial attempt to create a plone5 compatible theme [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- remove setup.cfg [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 2.2 (2015-06-11)
