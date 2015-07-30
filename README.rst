@@ -22,6 +22,9 @@ breed' file layouts for starting Zope projects.
 Available templates
 ===================
 
+cs_plone5_theme
+  Diazo theme for Plone 5 based in plonetheme.barceloneta
+
 cs_plone4_buildout
   A base template for a Plone 4 based buildout. It has a single zeo-based instance,
   zeo server configuration and also a supervisor configuration.
