@@ -57,7 +57,7 @@ class Plone5Theme(ZSPlone3Theme):
         print "    ..."
         print "    FEDEV true"
         print ""
-        print " Remember also to disable that setting for deployment "
+        print " Remember also to disable this setting for deployment "
         print ""
         print ""
         print ""
