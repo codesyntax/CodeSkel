@@ -15,4 +15,4 @@ after_success:
 
 notifications:
   email:
-    - $author_email
+    - ${author_email}

@@ -1,6 +1,6 @@
 [report]
 include =
-    src/$project/*
+    ${namespace_package}/*
 omit =
     */test*
     */upgrades/*

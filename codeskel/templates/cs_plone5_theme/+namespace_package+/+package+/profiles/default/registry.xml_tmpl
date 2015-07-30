@@ -5,8 +5,9 @@
   <records prefix="plone.resources/${project}-resources"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
      <value key="css">
-        <element>++theme++${project}/less/${project}.less</element>
+        <element>++theme++${project}/css/${project}.less</element>
      </value>
+     <value key="js">++theme++${project}/js/${project}.js</value>
   </records>
 
   <!-- create a bundle definition -->

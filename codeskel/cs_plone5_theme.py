@@ -23,11 +23,22 @@ class Plone5Theme(ZSPlone3Theme):
     get_var(vars, 'include_doc').default = True
     get_var(vars, 'include_doc').modes = ()
 
-    get_var(vars, 'skinname').default = '(CHANGE THIS) Custom Theme'
+    get_var(vars, 'skinname').modes = ()
 
     def pre(self, command, output_dir, vars):
         super(Plone5Theme, self).pre(command, output_dir, vars)
-        vars['description'] = 'Installable theme: %s.%s' % (vars['namespace_package'], vars['package'])
+        vars['description'] = 'Installable theme: %s.%s'.format(
+            vars['namespace_package'],
+            vars['package'])
+        vars['skinname'] = '{}.{} Custom Theme'.format(
+            vars['namespace_package'],
+            vars['package'])
+
+        vars['author'] = 'CodeSyntax'
+        vars['author_email'] = 'info@codesyntax.com'
+        vars['url'] = 'https://github.com/codesyntax/{}.{}'.format(
+            vars['namespace_package'],
+            vars['package'])
 
     def post(self, command, output_dir, vars):
         pass
