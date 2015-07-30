@@ -1,6 +1,7 @@
 [theme]
-title = $project
+title = ${project}
 description = A diazo theme
+doctype = <!DOCTYPE html>
 
 enabled-bundles = ${project}-bundle plone
 

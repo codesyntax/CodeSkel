@@ -16,9 +16,11 @@
       <element>${project}-resources</element>
     </value>
     <value key="enabled">True</value>
-    <value key="jscompilation">++plone++$project/bundle.min.js</value>
-    <value key="csscompilation">++plone++$project/bundle.css</value>
-    <value key="last_compilation">2015-05-28 00:00:00</value>
+    <value key="compile">True</value>
+    <value key="last_compilation">2015-01-01 00:00:00</value>
+    <value key="depends">plone</value>
+    <value key="jscompilation">++plone++${project}/bundle.min.js</value>
+    <value key="csscompilation">++plone++${project}/bundle.css</value>
   </records>
 
 </registry>
