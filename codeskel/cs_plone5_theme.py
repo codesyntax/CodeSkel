@@ -1,6 +1,7 @@
 from zopeskel import Plone3Theme as ZSPlone3Theme
 from zopeskel.base import get_var
 import copy
+import os
 
 
 class Plone5Theme(ZSPlone3Theme):
@@ -61,4 +62,6 @@ class Plone5Theme(ZSPlone3Theme):
         print ""
         print ""
         print ""
+        readme = os.path.join(output_dir, 'README.txt')
+        os.remove(readme)
 
