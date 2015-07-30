@@ -41,4 +41,24 @@ class Plone5Theme(ZSPlone3Theme):
             vars['package'])
 
     def post(self, command, output_dir, vars):
-        pass
+        print "-----------------------------------------------------------"
+        print " Generation finished"
+        print ""
+        print "-----------------------------------------------------------"
+        print ""
+        print " Remember to enable development mode in your buildout to   "
+        print " have all LESS and JS files reloaded while in development  "
+        print ""
+        print " To do that, add this in your buildout's instance part"
+        print ""
+        print " [instance]"
+        print " ..."
+        print " environment-vars ="
+        print "    ..."
+        print "    FEDEV true"
+        print ""
+        print " Remember also to disable that setting for deployment "
+        print ""
+        print ""
+        print ""
+
