@@ -1,0 +1,20 @@
+Introduction: ${project}
+================================================================
+
+This product adds a new Diazo Theme to be used with Plone 5.
+
+We use the new Resource registries to create a bundle with a resource that holds two files:
+
+- An empty JS file called ++theme++${project}/js/${project}.js and
+- A LESS file called ++theme++${project}/css/${project}.less and
+
+This files are registered in the new resource registries and enabled in the Diazo theme so you don't have to worry about compiling manualy this files. You will only have to go to the Resource Registries control panel and hit Build when you upload a new file into production.
+
+While in development you can directly modify the LESS and JS file on the file system and have it reloaded live (without manual build process) if you have an environment var called FEDEV with true as a value. To achieve that you can use your buildout and add this setting::
+
+    [instance]
+    ...
+    environment-vars =
+        FEDEV true
+
+For the theming itself we register a copy of Barceloneta theme. Two theme files are provided, one of theme will be used for the logged in users and the other one for anonymous users. The idea behind this is to have the plain Barceloneta theme for logged-in users and let the designer design a new one for the front-end.
