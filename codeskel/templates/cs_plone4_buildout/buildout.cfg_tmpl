@@ -19,7 +19,7 @@ parts +=
 
 \# Change the number here to change the version of Plone being used
 extends =
-    https://dist.plone.org/release/4.3.4/versions.cfg
+    https://dist.plone.org/release/5.0-latest/versions.cfg
     webserver.cfg
 
 
@@ -28,7 +28,7 @@ versions = versions
 \# Add additional egg download sources here. dist.plone.org contains archives
 \# of Plone packages.
 find-links =
-    https://dist.plone.org/release/4.3.4
+    https://dist.plone.org/release/5.0-latest
     https://dist.plone.org/thirdparty
 
 \# Add additional eggs needed for your project here
@@ -62,10 +62,6 @@ jarn.checkinterval = 1.0
 
 \# Custom egg versions
 cs.folderishpage = 1.0
-plone.app.contenttypes = 1.0
-plone.app.multilingual = 1.2.1
-plone.multilingual = 1.2.1
-plone.multilingualbehavior = 1.2
 
 
 \# Port configuration
