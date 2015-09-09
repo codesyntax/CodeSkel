@@ -2,10 +2,11 @@
 HISTORY
 =======
 
-3.1 (unreleased)
+3.1 (2015-09-09)
 ----------------
 
-- Nothing changed yet.
+- default Plone 5 [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 3.0 (2015-07-30)
