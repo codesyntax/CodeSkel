@@ -5,7 +5,7 @@ HISTORY
 3.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Rework Plone 5 Theme: provide a copy of Barceloneta that registers a LESS file and a JS file. [erral]
 
 
 3.1 (2015-09-09)
