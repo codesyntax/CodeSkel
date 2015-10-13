@@ -6,7 +6,6 @@
 
   <includeDependencies package="." />
   <i18n:registerTranslations directory="locales" />
-  <grok:grok package="." />
 
   <include package=".browser" />
 
