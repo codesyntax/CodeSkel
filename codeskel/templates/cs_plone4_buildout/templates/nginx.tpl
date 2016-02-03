@@ -21,6 +21,8 @@ server {
 
     gzip            on;
     gzip_min_length 1000;
+    gzip_types      text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript application/x-javascript;
+
     client_max_body_size 20M;
 
     location / {

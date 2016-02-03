@@ -25,6 +25,8 @@ server {
 
     gzip            on;
     gzip_min_length 1000;
+    gzip_types      text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript application/x-javascript;
+
 
 
     rewrite ^(.*)(/login|/require_login|/failsafe_login_form)(.*) http://${configuration:edit-server-name}$1$2$3 redirect;
@@ -55,6 +57,10 @@ server {
        server_name ${configuration:edit-server-name};
        access_log ${configuration:nginx-log-path}/${configuration:edit-server-name}_access.log;
        error_log  ${configuration:nginx-log-path}/${configuration:edit-server-name}_error.log;
+
+        gzip            on;
+        gzip_min_length 1000;
+        gzip_types      text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript application/x-javascript;
 
        client_max_body_size 20M;
 
