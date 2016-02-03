@@ -27,3 +27,12 @@
     AddOutputFilterByType DEFLATE text/plain
     AddOutputFilterByType DEFLATE text/xml
 </VirtualHost>
+
+<VirtualHost *:80>
+  ServerName ${configuration:server-name-principal-redirect}
+  ServerAlias ${configuration:additional-names}
+  RewriteEngine On
+
+  RewriteRule ^/(.*) http://${configuration:server-name}/$1 [L,R=301]
+
+</VirtualHost>
