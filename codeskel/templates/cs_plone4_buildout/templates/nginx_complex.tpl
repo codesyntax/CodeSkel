@@ -25,7 +25,7 @@ server {
 
     gzip            on;
     gzip_min_length 1000;
-    gzip_types      text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript application/x-javascript;
+    gzip_types      application/javascript application/json application/rss+xml application/x-javascript application/xhtml+xml application/xml application/xml+rss text/css text/html text/javascript text/plain text/xml;
 
 
 
@@ -58,9 +58,9 @@ server {
        access_log ${configuration:nginx-log-path}/${configuration:edit-server-name}_access.log;
        error_log  ${configuration:nginx-log-path}/${configuration:edit-server-name}_error.log;
 
-        gzip            on;
-        gzip_min_length 1000;
-        gzip_types      text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript application/x-javascript;
+       gzip            on;
+       gzip_min_length 1000;
+       gzip_types      application/javascript application/json application/rss+xml application/x-javascript application/xhtml+xml application/xml application/xml+rss text/css text/html text/javascript text/plain text/xml;
 
        client_max_body_size 20M;
 
