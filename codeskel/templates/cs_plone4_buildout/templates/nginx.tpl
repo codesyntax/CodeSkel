@@ -15,7 +15,7 @@ upstream ${buildout:projectname}haproxy {
 server {
 
     listen 80;
-    server_name ${configuration:server-name} ${configuration:additional-names};
+    server_name ${configuration:server-name};
     access_log ${configuration:nginx-log-path}/${configuration:server-name}.log;
     error_log  ${configuration:nginx-log-path}/${configuration:server-name}.log;
 
@@ -34,4 +34,16 @@ server {
         # HAProxy
         # proxy_pass http://${buildout:projectname}haproxy;
     }
+}
+
+
+server {
+
+   listen 80;
+   server_name ${configuration:additional-names};
+
+   location / {
+        rewrite ^/(.*)$ http://${configuration:server-name} break;
+
+   }
 }
