@@ -40,7 +40,7 @@
     RewriteCond %{HTTP_COOKIE} "__ac=" [OR]
     RewriteCond %{REQUEST_URI} ^.*(/login|/login_form|/require_login|/failsafe_login_form|logged_out)$
 
-    RewriteRule ^/(.*) http://127.0.0.1:${configuration:zope-edit-port}/VirtualHostBase/http/%{HTTP_HOST}:80/elawebgunea/VirtualHostRoot/$1 [L,P]
+    RewriteRule ^/(.*) http://127.0.0.1:${configuration:zope-edit-port}/VirtualHostBase/http/%{HTTP_HOST}:80/Plone/VirtualHostRoot/$1 [L,P]
 
     RewriteRule ^/(.*) http://${configuration:server-name}/$1 [C]
 
