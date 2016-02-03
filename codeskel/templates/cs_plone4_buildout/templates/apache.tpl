@@ -1,6 +1,5 @@
 <VirtualHost *:80>
     ServerName ${configuration:server-name}
-    ServerAlias ${configuration:additional-names}
 
     RewriteEngine On
     # Zope directly
