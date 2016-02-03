@@ -82,7 +82,7 @@ varnish = ${varnish_port}
 \# Set here the primary domain name to this instance
 server-name =
 \# ONLY NEEDED BY APACHE Set the servername of the principal redirect virtualhost
-server-name-principal-redirect = ela.eus
+server-name-principal-redirect =
 \# Set here the secondary domain names to this instance that will be redirected to the primary one
 additional-names =
 \# Only used to create SSL configuration
