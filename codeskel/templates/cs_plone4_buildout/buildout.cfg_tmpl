@@ -79,20 +79,28 @@ varnish = ${varnish_port}
 \# Webserver configuration. It will be used to generate apache and nginx configuration
 \# To use them, symlink the appropiate file to your webserver configuration directory
 [configuration]
-server-name = \# Set here the primary domain name to this instance
-additional-names = \# Set here the secondary domain names to this instance that will be redirect to the primary one
+\# Set here the primary domain name to this instance
+server-name =
+\# Set here the secondary domain names to this instance that will be redirect to the primary one
+additional-names =
 \# Only used to create SSL configuration
-ssl-certificate-path = \# Set here the absolute path to the SSL certificate file
-ssl-private-key-path = \# Set here the absolute path to the Private key file
-ssl-certificate-chain-path = \# ONLY NEEDED BY APACHE: Set here the absolute path to the SSL certificate chain file
-ssl-ca-certificate-path = \# ONLY NEEDED BY APACHE: Set here the absolute path to the CA SSL certificate
+\# Set here the absolute path to the SSL certificate file
+ssl-certificate-path =
+\# Set here the absolute path to the Private key file
+ssl-private-key-path =
+\# ONLY NEEDED BY APACHE: Set here the absolute path to the SSL certificate chain file
+ssl-certificate-chain-path =
+\# ONLY NEEDED BY APACHE: Set here the absolute path to the CA SSL certificate
+ssl-ca-certificate-path =
 \# Standard defaults, only change if you want to store the files somewhere else
 apache-log-path = /var/log/apache2
 nginx-log-path = /var/log/nginx
 \# Only used in the complex setup where all logged-in traffic
 \# is directed to a given Zope instance
-edit-server-name = \# Set the domain name to be used by logged-in users.
-zope-edit-port = \# Set the port-number of the instance used to edit.
+\# Set the domain name to be used by logged-in users.
+edit-server-name =
+\# Set the port-number of the instance used to edit.
+zope-edit-port =
 
 [checkinterval]
 recipe = cs.recipe.checkinterval
