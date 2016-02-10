@@ -43,7 +43,7 @@ server {
    server_name ${configuration:additional-names};
 
    location / {
-        rewrite ^/(.*)$ http://${configuration:server-name} break;
+        rewrite ^/(.*)$ http://${configuration:server-name}$request_uri break;
 
    }
 }
