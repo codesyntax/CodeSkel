@@ -41,9 +41,5 @@ server {
 
    listen 80;
    server_name ${configuration:additional-names};
-
-   location / {
-        rewrite ^/(.*)$ http://${configuration:server-name}$request_uri break;
-
-   }
+   return 301 $scheme://${configuration:server-name}$request_uri;
 }
