@@ -4,8 +4,9 @@
 #    <!-- -*- extra stuff goes here -*- -->
     <permission name="$add_permission_name" acquire="False">
       <role name="Manager" />
-      <role name="Site Administrator" /> 
-      <role name="Contributor" />      
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Contributor" />
     </permission>
 #  </permissions>
 #</rolemap>
