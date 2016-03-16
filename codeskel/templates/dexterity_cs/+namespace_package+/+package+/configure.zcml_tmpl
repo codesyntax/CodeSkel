@@ -11,6 +11,7 @@
   <includeDependencies package="." />
 
   <include file="permissions.zcml" />
+  <include file="content.zcml" />
   <include package=".browser" />
 
   <i18n:registerTranslations directory="locales" />
