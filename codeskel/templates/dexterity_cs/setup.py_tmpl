@@ -26,9 +26,9 @@ setup(name=${repr($project)},
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'five.grok',
           'plone.app.dexterity [grok, relations]',
           'plone.namedfile [blobs]',
+          'plone.app.relationfield',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

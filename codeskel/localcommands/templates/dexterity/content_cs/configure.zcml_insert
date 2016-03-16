@@ -1,0 +1,12 @@
+
+    <class class=".${content_class_filename}.${contenttype_classname}">
+        <implements interface=".${content_class_filename}.${interface_name}" />
+    </class>
+
+    <browser:page
+        for=".${content_class_filename}.${interface_name}"
+        name="view"
+        class=".${content_class_filename}.${contenttype_classname}View"
+        template="templates/${content_class_filename}view.pt"
+        permission="zope2.View"
+        />
