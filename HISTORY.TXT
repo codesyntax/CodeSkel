@@ -5,6 +5,14 @@ HISTORY
 3.3 (unreleased)
 ----------------
 
+- Improve documentation [erral]
+
+- Change template names [erral]
+
+- Improve and clean dexterity templates [erral]
+
+- Remove django templates because we do not use them [erral]
+
 - Remove grok traces from dexterity template [erral]
 
 
