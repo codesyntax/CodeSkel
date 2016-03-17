@@ -6,9 +6,9 @@ after repeating many times several changes in our Plone projects
 
 All skeletons are available as PasteScript_ templates and can be used
 via the ''paster'' commandline tool. For example to create a package
-for a Plone 3 theme you can do::
+for a Plone 4 theme you can do::
 
-    paster create -t cs_plone3_theme
+    paster create -t cs_plone_theme
 
 this will ask a few questions such as desired package name and a description
 and output a complete package skeleton that you can immediately start using.
@@ -25,46 +25,44 @@ Available templates
 cs_plone5_theme
   Diazo theme for Plone 5 based in plonetheme.barceloneta
 
-cs_plone4_buildout
-  A base template for a Plone 4 based buildout. It has a single zeo-based instance,
-  zeo server configuration and also a supervisor configuration.
-  It also adds an egg omelette.
+cs_plone_buildout
+  A base template for a Plone 5 based buildout. It can be used for Plone 4 too.
+  It has a single zeo-based instance, zeo server configuration and also a
+  supervisor configuration. It provides additional instances if needed and
+  sample configuration for haproxy and varnish.
+  It also creates an egg omelette.
+  It creates Apache and Nginx configuration files so, you can just symlink
+  those files to the configuration folder of Apache/Nginx. The domain names
+  can be configured directly in the buildout file.
   The port configuration is simplified to a single change in one place.
   It also creates a projectname variable to use it throughout the buildout file
 
-cs_plone3_theme
-  This template creates a theme package for Plone 3 and 4. This is the successor of
-  ZopeSkel provided plone3_theme but without the resource directories for CSS and images
-  because our designers prefer to work with skin-based folders and urls without ++ :)
+cs_plone4_theme
+  This template creates a theme package for Plone 4 (it will work for 3 too).
+  This is the successor of ZopeSkel provided plone3_theme but without the
+  resource directories for CSS and images because our designers prefer to work
+  with skin-based folders and urls without ++ :)
 
-bootstrap_template
-  A template based on ploneteheme.bootstrap, that provides a Twitter Bootstrap
+cs_bootstrap_theme
+  A template based on ploneteheme.bootstrap, that provides a Bootstrap_
   based template for Plone.
 
-dexterity_cs
-  A dexterity based package template based on the ZopeSkel provided one but some additions
-  based on archeytype template from ZopeSkel
-
-cs_django_project
-  A Django project skeleton
-
-cs_django_buildout
-  A Django buildout skeleton, with gunicorn and supervisor configuration and also
-  with a project in src folder
+cs_dexterity
+  A dexterity based package template based on the one provided by
+  `zopeskel.dexterity`_ but with some changes, such as: no traces of Grok, less
+  questions when creating the page, custom permissions, ...
 
 
 Local commands
 ---------------
 
-This package adds also a local command support for dexterity_cs to add a dexterity based content
-type.
+This package adds also a local command support for cs_dexterity based packages
+to add a dexterity based content type.
 
 cs_dexterity_content
-  This local command adds a new dexterity based content-type, with a simple view and creates all
-  templates in a single folder instead of one folder per content type as done by the
-  zopeskel.dexterity product's localcommand
-  It also adds permission information in the same way as the contenttype localcommand does
-  for archetype template
+  This local command adds a new dexterity based content-type, with a simple
+  view and creates all templates in a single folder. The content-types created
+  are shown directly in the navigation.
 
 Installation
 ==============
@@ -85,7 +83,10 @@ We have been fighting for long with system-wide ZopeSkel and some time ago start
 Mikko's recommendation and now we have almost zero problems when working with ZopeSkel/CodeSkel.
 
 So, create a virtualenv_ and install CodeSkel in there, it will automatically pull
-ZopeSkel (version < 3 of course) and zopeskel.dexterity
+ZopeSkel_ (version < 3) and `zopeskel.dexterity`_
 
+.. _ZopeSkel: https://pypi.python.org/pypi/ZopeSkel/2.21.2
 .. _`Mikko Ohtamaa's recommendation`: http://opensourcehacker.com/2010/04/13/using-paster-create-command-with-buildout-and-avoiding-the-infamous-dependency-issue/
-.. _virtualenv: http://pypi.python.org/pypi/virtualenv
+.. _virtualenv: https://pypi.python.org/pypi/virtualenv
+.. _`zopeskel.dexterity`: https://pypi.python.org/pypi/zopeskel.dexterity
+.. _Bootstrap: https://getbootstrap.com/
