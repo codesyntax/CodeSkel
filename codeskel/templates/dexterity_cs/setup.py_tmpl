@@ -25,10 +25,10 @@ setup(name=${repr($project)},
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
-          'plone.app.dexterity [grok, relations]',
-          'plone.namedfile [blobs]',
-          'plone.app.relationfield',
+          #'setuptools',
+          #'plone.app.dexterity [grok, relations]',
+          #'plone.namedfile [blobs]',
+          #'plone.app.relationfield',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
