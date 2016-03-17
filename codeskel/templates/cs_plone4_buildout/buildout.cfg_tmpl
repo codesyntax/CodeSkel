@@ -51,17 +51,17 @@ setuptools =
 zc.buildout =
 
 \# Supervisor versions
-supervisor = 3.1.3
-collective.recipe.supervisor = 0.19
+supervisor = 3.2.2
+collective.recipe.supervisor = 0.20
 superlance = 0.11
-meld3 = 1.0.0
+meld3 = 1.0.2
 
 \# Calculate Zope's checkinterval
 cs.recipe.checkinterval = 1.0
 jarn.checkinterval = 1.0
 
 \# Custom egg versions
-cs.folderishpage = 1.0
+cs.folderishpage = 1.1.1
 
 
 \# Port configuration
@@ -214,4 +214,3 @@ scripts = zopepy
 \# for documentation about using git or svn urls, check
 \# http://pypi.python.org/pypi/mr.developer
 [sources]
-
