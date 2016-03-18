@@ -5,7 +5,7 @@ HISTORY
 4.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix dexterity template [erral]
 
 
 4.0 (2016-03-17)
