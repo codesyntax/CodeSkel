@@ -17,7 +17,7 @@ server {
     listen 80;
     server_name ${configuration:server-name};
     access_log ${configuration:nginx-log-path}/${configuration:server-name}.log;
-    error_log  ${configuration:nginx-log-path}/${configuration:server-name}.log;
+    error_log  ${configuration:nginx-log-path}/${configuration:server-name}.error.log;
 
     gzip            on;
     gzip_min_length 1000;
