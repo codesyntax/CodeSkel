@@ -5,7 +5,26 @@ HISTORY
 4.0.2 (unreleased)
 ------------------
 
-- Provide cronjobs for supervisor and zeopack in buildout template [erral]
+- history changelog [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- rename usercrontab [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- change file name [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- remove the robots.txt config file [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- remove spdy config file [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- provide logrotate config file and cronjobs to restart the supervisor and pack the ZEO [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- error [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- Change error log filename [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 - Provide logrotate configuration in buildout template [erral]
 
