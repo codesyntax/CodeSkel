@@ -5,7 +5,12 @@ HISTORY
 4.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- adjust pid files1 [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 4.0.2 (2016-06-23)
