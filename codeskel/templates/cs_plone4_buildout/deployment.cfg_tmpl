@@ -1,6 +1,7 @@
 [buildout]
 extends =
-    buildout.cfg
+    buildout.cfg    
+    services.cfg
 \# Uncomment if needed
 \# haproxy.cfg
 \# varnish.cfg

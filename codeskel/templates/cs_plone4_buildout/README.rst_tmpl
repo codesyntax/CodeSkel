@@ -87,6 +87,17 @@ rewritten each time buildout is run.
 If you change any configuration that lives on those files (port numbers,
 server names, ...) you will need to restart your Apache/Nginx.
 
+This buildout also configures a cronjob to start the supervisor when
+the server reboots. Check the services.cfg file for details.
+
+This buildout configures a cronjob to pack the ZEO database once a wheek. Check
+the services.cfg file for details.
+
+This buildout provides a configuration file for instance log rotation. The file
+is created inside the `etc` folder: logrotate.conf You will need to symlink it
+to your /etc/logrotate.d/ directory to have it running.
+
+
 We also provide a basic Varnish configuration on the file varnish.cfg and also HAProxy
 configuration, if you want to use a caching server and/or a load balancer. Check
 the files varnish.cfg and haproxy.cfg
