@@ -7,7 +7,7 @@ ${buildout:directory}/var/log/*.log{
         missingok
         sharedscripts
         postrotate
-          /bin/kill -USR2 `cat ${buildout:directory}/instance.pid`
-          /bin/kill -USR2 `cat ${buildout:directory}/zeo.pid`
+          /bin/kill -USR2 `cat ${buildout:directory}/var/instance.pid`
+          /bin/kill -USR2 `cat ${buildout:directory}/var/zeo.pid`
         endscript
 }
