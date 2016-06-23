@@ -35,10 +35,6 @@ server {
       rewrite ^/(.*) http://${configuration:edit-server-name}/$1 redirect;
     }
 
-    location /robots.txt {
-       return 200 "User-agent: *\n Disallow: /";
-    }
-
     location / {
         rewrite ^/(.*)$ /VirtualHostBase/http/$host:80/Plone/VirtualHostRoot/$1 break;
         # Directly Zope
