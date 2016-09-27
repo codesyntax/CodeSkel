@@ -36,10 +36,6 @@ eggs =
     Pillow
     plone.app.contenttypes
     cs.folderishpage
-    plone.app.dexterity [grok, relations]
-\# Multilingual support for dexterity
-\# plone.app.multilingual
-\# plone.multilingualbehavior
 
 \# Add here which products' zcml files will be loaded
 zcml =
@@ -51,9 +47,9 @@ setuptools =
 zc.buildout =
 
 \# Supervisor versions
-supervisor = 3.2.2
+supervisor = 3.3.1
 collective.recipe.supervisor = 0.20
-superlance = 0.11
+superlance = 0.14
 meld3 = 1.0.2
 
 \# Calculate Zope's checkinterval
@@ -61,7 +57,7 @@ cs.recipe.checkinterval = 1.0
 jarn.checkinterval = 1.0
 
 \# Custom egg versions
-cs.folderishpage = 1.1.1
+cs.folderishpage = 2.0
 
 
 \# Port configuration
