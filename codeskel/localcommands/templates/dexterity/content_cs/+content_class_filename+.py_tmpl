@@ -9,7 +9,7 @@ from plone.dexterity.content import Item
 from plone.namedfile.interfaces import IImageScaleTraversable
 from plone.supermodel import model
 from Products.Five import BrowserView
-
+from plone.dexterity.browser.view import DefaultView
 
 \# Use these to create field-types for the content-type
 \#from zope.schema import TextLine
@@ -60,7 +60,10 @@ class ${contenttype_classname}(Item):
 \# using the content.zcml file.
 \# This will make this view the default view for your content-type
 
-class ${contenttype_classname}View(BrowserView):
+\# Check http://docs.plone.org/external/plone.app.dexterity/docs/custom-views.html#display-view
+\# To see how to render all the widgets with their default view
+\# 
+class ${contenttype_classname}View(DefaultView):
 
     \# Add view methods here
     pass
