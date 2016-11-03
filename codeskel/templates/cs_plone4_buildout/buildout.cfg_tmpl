@@ -33,6 +33,7 @@ find-links =
 
 \# Add additional eggs needed for your project here
 eggs =
+    pdbpp
     Pillow
     plone.app.contenttypes
     cs.folderishpage
