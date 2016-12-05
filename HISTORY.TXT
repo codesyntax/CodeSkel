@@ -5,7 +5,18 @@ HISTORY
 4.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- instal pdbpp for debugging [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- adjust default behaviors [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- document how to render the default widgets using Dexterity's DefaultView [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- update versions [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 4.0.4 (2016-06-28)
