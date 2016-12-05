@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-4.0.5 (unreleased)
+4.0.5 (2016-12-05)
 ------------------
 
 - instal pdbpp for debugging [Mikel Larreategi <mlarreategi@codesyntax.com>]
