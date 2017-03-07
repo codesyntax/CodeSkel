@@ -19,6 +19,7 @@ eggs =
     django-photologue
     django-tinymce
     django-pagination
+    ${project}
     gunicorn
 
 \# This line should be emtpy, use mr.developer
@@ -40,7 +41,7 @@ eggs =
 extra-paths =
     \${buildout:directory}/../conf
 
-cripts-with-settings =
+scripts-with-settings =
     gunicorn
 
 [staticfiles]
