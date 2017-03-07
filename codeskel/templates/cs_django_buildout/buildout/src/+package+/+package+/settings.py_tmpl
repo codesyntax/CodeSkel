@@ -36,8 +36,9 @@ LANGUAGES = (
     ('eu', 'Euskara'),
 )
 
-
 SITE_ID = 1
+
+SECRET_KEY = "Enter the secret key!"
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.

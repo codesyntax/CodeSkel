@@ -41,7 +41,7 @@ extra-paths =
     \${buildout:directory}/../conf
 
 cripts-with-settings =
-    \gunicorn
+    gunicorn
 
 [staticfiles]
 recipe = collective.recipe.cmd
@@ -58,8 +58,7 @@ recipe = collective.recipe.supervisor
 http-socket = unix
 file = \${buildout:directory}/supervisord.sock
 programs =
-     \10 run_gunicorn ${buildout:bin-directory}/gunicorn-with-settings [-b unix:${buildout:directory}/gunicorn.sock --workers=1 -t 15  ${django:project}.wsgi]
-
+     10 run_gunicorn \${buildout:bin-directory}/gunicorn-with-settings [-b unix:\${buildout:directory}/gunicorn.sock --workers=1 -t 15  \${django:project}.wsgi]
 
 [nginx.conf]
 recipe = collective.recipe.template
@@ -71,3 +70,4 @@ logpath = /var/log/nginx
 
 
 [sources]
+${project} = git git@bitbucket.org:codesyntax/${project}.git
