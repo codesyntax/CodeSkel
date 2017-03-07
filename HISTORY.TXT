@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-4.0.7 (unreleased)
+4.0.7 (2017-03-07)
 ------------------
 
 - Django templates added [Urtzi Odriozola <uodriozola@codesyntax.com>]
