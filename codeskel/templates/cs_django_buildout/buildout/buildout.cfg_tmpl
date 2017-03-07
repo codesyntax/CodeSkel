@@ -56,15 +56,15 @@ packages =
 [supervisor]
 recipe = collective.recipe.supervisor
 http-socket = unix
-file = ${buildout:directory}/supervisord.sock
+file = \${buildout:directory}/supervisord.sock
 programs =
      \10 run_gunicorn ${buildout:bin-directory}/gunicorn-with-settings [-b unix:${buildout:directory}/gunicorn.sock --workers=1 -t 15  ${django:project}.wsgi]
 
 
 [nginx.conf]
 recipe = collective.recipe.template
-input = ${buildout:directory}/templates/nginx.tpl
-output = ${buildout:directory}/etc/nginx-vh.conf
+input = \${buildout:directory}/templates/nginx.tpl
+output = \${buildout:directory}/etc/nginx-vh.conf
 servername = ${project}.eus
 additional-names =
 logpath = /var/log/nginx
