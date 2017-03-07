@@ -5,7 +5,12 @@ HISTORY
 4.0.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- django projects [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+- Update nginx.tpl [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+- Update buildout.cfg_tmpl [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
 
 
 4.0.9 (2017-03-07)
