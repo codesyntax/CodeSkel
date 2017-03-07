@@ -5,7 +5,10 @@ HISTORY
 4.0.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- bugfixes [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+- django import fix [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
 
 
 4.0.10 (2017-03-07)
