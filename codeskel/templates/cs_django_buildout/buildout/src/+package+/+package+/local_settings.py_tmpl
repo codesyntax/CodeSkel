@@ -16,4 +16,6 @@ DATABASES = {
 STATIC_ROOT = '/var/csmant/django/${package}/static'
 MEDIA_ROOT = '/var/csmant/django/${package}/media'
 
+ALLOWED_HOSTS = ('anboto.cs', 'localhost')
+
 USE_X_FORWARDED_HOST = True
