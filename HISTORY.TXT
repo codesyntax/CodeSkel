@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-4.0.12 (unreleased)
+4.0.12 (2017-03-07)
 -------------------
 
 - wsgi file added to Django buildout project [Urtzi Odriozola <uodriozola@codesyntax.com>]
