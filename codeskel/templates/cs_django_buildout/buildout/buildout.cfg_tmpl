@@ -5,9 +5,6 @@ parts =
     supervisor
     nginx.conf
 
-find-links =
-    http://www.codesyntax.com/en/products/simple
-
 extensions =
     mr.developer
 
