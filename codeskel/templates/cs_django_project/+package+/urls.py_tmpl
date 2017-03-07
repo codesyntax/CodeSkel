@@ -1,0 +1,17 @@
+from django.conf.urls import include, url
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from ${package} import views
+
+# Uncomment the next two lines to enable the admin:
+from django.contrib import admin
+admin.autodiscover()
+
+
+urlpatterns = [
+    # Uncomment the line below and put the correct project name
+    url(r'^$', views.index),
+
+    url(r'^admin/', include(admin.site.urls)),
+]
+
+urlpatterns += staticfiles_urlpatterns()

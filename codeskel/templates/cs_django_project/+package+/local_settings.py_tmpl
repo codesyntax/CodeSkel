@@ -1,0 +1,19 @@
+## REPLACE django-project with the correct project name
+
+DEBUG = True
+
+DATABASES = {
+        'default': {
+        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': '${package}',                      # Or path to database file if using sqlite3.
+        'USER': '${package}_user',                      # Not used with sqlite3.
+        'PASSWORD': '${package}_pass',                  # Not used with sqlite3.
+        'HOST': 'mysql.cs',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
+STATIC_ROOT = '/var/csmant/django/${package}/static'
+MEDIA_ROOT = '/var/csmant/django/${package}/media'
+
+USE_X_FORWARDED_HOST = True
