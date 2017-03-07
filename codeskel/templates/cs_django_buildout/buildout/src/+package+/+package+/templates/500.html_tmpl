@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Error 500 - ${package}
+{% endblock %}
+
+{% block body %}
+
+        <h1>${package} - Error 500</h1>
+
+        <p><a href="/">Home</a></p>
+
+{% endblock %}

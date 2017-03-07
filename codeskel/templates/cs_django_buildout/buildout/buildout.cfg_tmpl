@@ -1,0 +1,76 @@
+[buildout]
+parts =
+    django
+    staticfiles
+    supervisor
+    nginx.conf
+
+find-links =
+    http://www.codesyntax.com/en/products/simple
+
+extensions =
+    mr.developer
+
+show-picked-versions = true
+
+\# Add here any other egg you want to depend on
+eggs =
+    MySQL-python
+    Pillow
+    csdjango.contactform
+    akismet
+    django-photologue
+    django-tinymce
+    django-pagination
+    gunicorn
+
+\# This line should be emtpy, use mr.developer
+develop =
+
+versions = versions
+
+[versions]
+
+
+[django]
+recipe = djangorecipe
+project = ${project}
+settings = settings
+wsgi = true
+eggs =
+    \${buildout:eggs}
+    \${django:project}
+extra-paths =
+    \${buildout:directory}/../conf
+
+cripts-with-settings =
+    \gunicorn
+
+[staticfiles]
+recipe = collective.recipe.cmd
+on_install = True
+on_update = True
+cmds =
+    \${buildout:directory}/bin/django collectstatic -v0 --noinput
+
+packages =
+    \${django:location}/django ./django
+
+[supervisor]
+recipe = collective.recipe.supervisor
+http-socket = unix
+file = ${buildout:directory}/supervisord.sock
+programs =
+     \10 run_gunicorn ${buildout:bin-directory}/gunicorn-with-settings [-b unix:${buildout:directory}/gunicorn.sock --workers=1 -t 15  ${django:project}.wsgi]
+
+
+[nginx.conf]
+recipe = collective.recipe.template
+input = ${buildout:directory}/templates/nginx.tpl
+output = ${buildout:directory}/etc/nginx-vh.conf
+servername = ${project}.eus
+additional-names =
+logpath = /var/log/nginx
+
+
+[sources]
