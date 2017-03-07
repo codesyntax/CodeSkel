@@ -53,6 +53,6 @@ server {
 
 server {
     listen 80;
-    server_name www.${servername} www.ahotsak.com ahotsak.com;
+    server_name www.${servername};
     return 301 http://${servername}$request_uri;
 }
