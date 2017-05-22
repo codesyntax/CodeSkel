@@ -18,11 +18,11 @@
     Header always add Strict-Transport-Security "max-age=15768000"
 
     # Zope directly
-    RewriteRule ^/(.*) http://127.0.0.1:${ports:instance}/VirtualHostBase/http/%{HTTP_HOST}:443/Plone/VirtualHostRoot/$1 [L,P]
+    RewriteRule ^/(.*) http://127.0.0.1:${ports:instance}/VirtualHostBase/https/%{HTTP_HOST}:443/Plone/VirtualHostRoot/$1 [L,P]
     # Varnish
-    # RewriteRule ^/(.*) http://127.0.0.1:${ports:varnish}/VirtualHostBase/http/%{HTTP_HOST}:443/Plone/VirtualHostRoot/$1 [L,P]
+    # RewriteRule ^/(.*) http://127.0.0.1:${ports:varnish}/VirtualHostBase/https/%{HTTP_HOST}:443/Plone/VirtualHostRoot/$1 [L,P]
     # HAProxy
-    # RewriteRule ^/(.*) http://127.0.0.1:${ports:haproxy}/VirtualHostBase/http/%{HTTP_HOST}:443/Plone/VirtualHostRoot/$1 [L,P]
+    # RewriteRule ^/(.*) http://127.0.0.1:${ports:haproxy}/VirtualHostBase/https/%{HTTP_HOST}:443/Plone/VirtualHostRoot/$1 [L,P]
 
     ErrorLog ${configuration:apache-log-path}/${configuration:server-name}.error.log
     CustomLog ${configuration:apache-log-path}/${configuration:server-name}.access.log combined
