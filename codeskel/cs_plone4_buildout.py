@@ -35,7 +35,7 @@ class Plone4Buildout(BaseTemplate):
         print "              NEXT STEPS "
         print "-----------------------------------------------------------"
         print "              $ cd " + output_dir
-        print "              $ ~/buildout.python/bin/virtualenv-2.7 ."
-        print "              $ ./bin/pip install zc.buildout"
+        print "              $ virtualenv -p python2.7 ."
+        print "              $ ./bin/pip install -r requirements.txt"
         print "              $ ./bin/buildout -vv"
         print ""

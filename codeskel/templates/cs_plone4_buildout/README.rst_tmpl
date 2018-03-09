@@ -26,11 +26,11 @@ From this point on, all these steps must be executed with a user
 
 Create a virtualenv in this directory::
 
-  $ /path/to/virtualenv-2.7 .
+  $ virtualenv -p python2.7 .
 
 Install buildout::
 
-  $ ./bin/pip install zc.buildout
+  $ ./bin/pip install -r requirements.txt
 
 Run the buildout::
 
