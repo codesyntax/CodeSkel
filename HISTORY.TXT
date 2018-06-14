@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-4.0.14 (unreleased)
+4.0.14 (2018-06-14)
 -------------------
 
 - fix version pins [erral]
